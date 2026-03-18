@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+<rect width="100%" height="100%" fill="#fafafa"/>
+<text x="90" y="45" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="bold" fill="#222">Average Model Metrics</text>
+<text x="90" y="72" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#444">Regression project: plotted average R and average RMSE because accuracy/precision are not defined for these models.</text>
+<rect x="980" y="28" width="18" height="18" fill="#1f77b4"/><text x="1006" y="42" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#333">Single_DNN_Layers</text>
+<rect x="1180" y="28" width="18" height="18" fill="#d62728"/><text x="1206" y="42" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#333">Multiple_DNN_Layers</text>
+<text x="90" y="102" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#222">Average R</text>
+<line x1="90" y1="120" x2="90" y2="400" stroke="#333" stroke-width="2"/>
+<line x1="90" y1="400" x2="1206" y2="400" stroke="#333" stroke-width="2"/>
+<line x1="90" y1="400.0" x2="1206" y2="400.0" stroke="#ddd" stroke-width="1"/>
+<text x="80" y="405.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#555">0.00</text>
+<line x1="90" y1="344.0" x2="1206" y2="344.0" stroke="#ddd" stroke-width="1"/>
+<text x="80" y="349.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#555">0.17</text>
+<line x1="90" y1="288.0" x2="1206" y2="288.0" stroke="#ddd" stroke-width="1"/>
+<text x="80" y="293.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#555">0.33</text>
+<line x1="90" y1="232.0" x2="1206" y2="232.0" stroke="#ddd" stroke-width="1"/>
+<text x="80" y="237.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#555">0.50</text>
+<line x1="90" y1="176.0" x2="1206" y2="176.0" stroke="#ddd" stroke-width="1"/>
+<text x="80" y="181.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#555">0.67</text>
+<line x1="90" y1="120.0" x2="1206" y2="120.0" stroke="#ddd" stroke-width="1"/>
+<text x="80" y="125.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#555">0.83</text>
+<line x1="648.0" y1="120" x2="648.0" y2="400" stroke="#888" stroke-width="1.5" stroke-dasharray="6,6"/>
+<rect x="90" y="311.6" width="90" height="88.4" fill="#1f77b4" rx="3"/>
+<text x="135.0" y="303.6" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">0.263</text>
+<g transform="rotate(35 135.0 418)"><text x="135.0" y="418" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">S1 [10, 5]</text></g>
+<rect x="204" y="275.2" width="90" height="124.8" fill="#1f77b4" rx="3"/>
+<text x="249.0" y="267.2" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">0.372</text>
+<g transform="rotate(35 249.0 418)"><text x="249.0" y="418" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">S2 [20, 10]</text></g>
+<rect x="318" y="216.1" width="90" height="183.9" fill="#1f77b4" rx="3"/>
+<text x="363.0" y="208.1" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">0.548</text>
+<g transform="rotate(35 363.0 418)"><text x="363.0" y="418" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">S3 [50, 20]</text></g>
+<rect x="432" y="179.0" width="90" height="221.0" fill="#1f77b4" rx="3"/>
+<text x="477.0" y="171.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">0.658</text>
+<g transform="rotate(35 477.0 418)"><text x="477.0" y="418" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">S4 [100, 50]</text></g>
+<rect x="546" y="140.7" width="90" height="259.3" fill="#1f77b4" rx="3"/>
+<text x="591.0" y="132.7" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">0.772</text>
+<g transform="rotate(35 591.0 418)"><text x="591.0" y="418" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">S5 [200, 100]</text></g>
+<rect x="660" y="191.6" width="90" height="208.4" fill="#d62728" rx="3"/>
+<text x="705.0" y="183.6" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">0.621</text>
+<g transform="rotate(35 705.0 418)"><text x="705.0" y="418" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">M1 [10, 5]</text></g>
+<rect x="774" y="173.1" width="90" height="226.9" fill="#d62728" rx="3"/>
+<text x="819.0" y="165.1" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">0.676</text>
+<g transform="rotate(35 819.0 418)"><text x="819.0" y="418" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">M2 [20, 10]</text></g>
+<rect x="888" y="153.2" width="90" height="246.8" fill="#d62728" rx="3"/>
+<text x="933.0" y="145.2" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">0.735</text>
+<g transform="rotate(35 933.0 418)"><text x="933.0" y="418" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">M3 [50, 20]</text></g>
+<rect x="1002" y="148.7" width="90" height="251.3" fill="#d62728" rx="3"/>
+<text x="1047.0" y="140.7" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">0.748</text>
+<g transform="rotate(35 1047.0 418)"><text x="1047.0" y="418" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">M4 [100, 50]</text></g>
+<rect x="1116" y="144.1" width="90" height="255.9" fill="#d62728" rx="3"/>
+<text x="1161.0" y="136.1" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">0.762</text>
+<g transform="rotate(35 1161.0 418)"><text x="1161.0" y="418" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">M5 [200, 100]</text></g>
+<text x="90" y="502" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#222">Average RMSE</text>
+<line x1="90" y1="520" x2="90" y2="800" stroke="#333" stroke-width="2"/>
+<line x1="90" y1="800" x2="1206" y2="800" stroke="#333" stroke-width="2"/>
+<line x1="90" y1="800.0" x2="1206" y2="800.0" stroke="#ddd" stroke-width="1"/>
+<text x="80" y="805.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#555">0.00</text>
+<line x1="90" y1="744.0" x2="1206" y2="744.0" stroke="#ddd" stroke-width="1"/>
+<text x="80" y="749.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#555">0.05</text>
+<line x1="90" y1="688.0" x2="1206" y2="688.0" stroke="#ddd" stroke-width="1"/>
+<text x="80" y="693.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#555">0.09</text>
+<line x1="90" y1="632.0" x2="1206" y2="632.0" stroke="#ddd" stroke-width="1"/>
+<text x="80" y="637.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#555">0.14</text>
+<line x1="90" y1="576.0" x2="1206" y2="576.0" stroke="#ddd" stroke-width="1"/>
+<text x="80" y="581.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#555">0.19</text>
+<line x1="90" y1="520.0" x2="1206" y2="520.0" stroke="#ddd" stroke-width="1"/>
+<text x="80" y="525.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#555">0.23</text>
+<line x1="648.0" y1="520" x2="648.0" y2="800" stroke="#888" stroke-width="1.5" stroke-dasharray="6,6"/>
+<rect x="90" y="540.7" width="90" height="259.3" fill="#1f77b4" rx="3"/>
+<text x="135.0" y="532.7" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">0.216</text>
+<g transform="rotate(35 135.0 818)"><text x="135.0" y="818" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">S1 [10, 5]</text></g>
+<rect x="204" y="584.6" width="90" height="215.4" fill="#1f77b4" rx="3"/>
+<text x="249.0" y="576.6" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">0.180</text>
+<g transform="rotate(35 249.0 818)"><text x="249.0" y="818" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">S2 [20, 10]</text></g>
+<rect x="318" y="613.3" width="90" height="186.7" fill="#1f77b4" rx="3"/>
+<text x="363.0" y="605.3" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">0.156</text>
+<g transform="rotate(35 363.0 818)"><text x="363.0" y="818" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">S3 [50, 20]</text></g>
+<rect x="432" y="634.7" width="90" height="165.3" fill="#1f77b4" rx="3"/>
+<text x="477.0" y="626.7" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">0.138</text>
+<g transform="rotate(35 477.0 818)"><text x="477.0" y="818" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">S4 [100, 50]</text></g>
+<rect x="546" y="664.5" width="90" height="135.5" fill="#1f77b4" rx="3"/>
+<text x="591.0" y="656.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">0.113</text>
+<g transform="rotate(35 591.0 818)"><text x="591.0" y="818" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">S5 [200, 100]</text></g>
+<rect x="660" y="633.8" width="90" height="166.2" fill="#d62728" rx="3"/>
+<text x="705.0" y="625.8" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">0.139</text>
+<g transform="rotate(35 705.0 818)"><text x="705.0" y="818" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">M1 [10, 5]</text></g>
+<rect x="774" y="646.3" width="90" height="153.7" fill="#d62728" rx="3"/>
+<text x="819.0" y="638.3" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">0.128</text>
+<g transform="rotate(35 819.0 818)"><text x="819.0" y="818" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">M2 [20, 10]</text></g>
+<rect x="888" y="658.4" width="90" height="141.6" fill="#d62728" rx="3"/>
+<text x="933.0" y="650.4" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">0.118</text>
+<g transform="rotate(35 933.0 818)"><text x="933.0" y="818" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">M3 [50, 20]</text></g>
+<rect x="1002" y="661.9" width="90" height="138.1" fill="#d62728" rx="3"/>
+<text x="1047.0" y="653.9" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">0.115</text>
+<g transform="rotate(35 1047.0 818)"><text x="1047.0" y="818" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">M4 [100, 50]</text></g>
+<rect x="1116" y="664.6" width="90" height="135.4" fill="#d62728" rx="3"/>
+<text x="1161.0" y="656.6" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">0.113</text>
+<g transform="rotate(35 1161.0 818)"><text x="1161.0" y="818" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333">M5 [200, 100]</text></g>
+</svg>
