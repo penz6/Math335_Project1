@@ -2,130 +2,131 @@
 <rect width="1180" height="720" fill="#f7f4ea" />
 <rect x="28.0" y="24.0" width="1124.0" height="672.0" rx="18" fill="#fffdf7" stroke="#e6dec9" />
 <text x="52.0" y="58.0" fill="#1f1d1a" font-size="22" font-weight="700" font-family="Georgia, serif">Test R^2 vs Epoch Budget</text>
-<line x1="98.0" y1="728.3" x2="1122.0" y2="728.3" stroke="#d9d2bf" stroke-width="1" />
-<text x="86.0" y="733.3" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">-3</text>
+<text x="52.0" y="82.0" fill="#6f6659" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">Higher is better.</text>
+<line x1="98.0" y1="726.0" x2="1122.0" y2="726.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="86.0" y="731.0" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">-3</text>
 <line x1="98.0" y1="647.1" x2="1122.0" y2="647.1" stroke="#d9d2bf" stroke-width="1" />
 <text x="86.0" y="652.1" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">-2.5</text>
-<line x1="98.0" y1="565.9" x2="1122.0" y2="565.9" stroke="#d9d2bf" stroke-width="1" />
-<text x="86.0" y="570.9" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">-2</text>
-<line x1="98.0" y1="484.7" x2="1122.0" y2="484.7" stroke="#d9d2bf" stroke-width="1" />
-<text x="86.0" y="489.7" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">-1.5</text>
-<line x1="98.0" y1="403.5" x2="1122.0" y2="403.5" stroke="#d9d2bf" stroke-width="1" />
-<text x="86.0" y="408.5" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">-1</text>
-<line x1="98.0" y1="322.3" x2="1122.0" y2="322.3" stroke="#d9d2bf" stroke-width="1" />
-<text x="86.0" y="327.3" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">-0.5</text>
-<line x1="98.0" y1="241.1" x2="1122.0" y2="241.1" stroke="#d9d2bf" stroke-width="1" />
-<text x="86.0" y="246.1" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">0</text>
-<line x1="98.0" y1="159.9" x2="1122.0" y2="159.9" stroke="#d9d2bf" stroke-width="1" />
-<text x="86.0" y="164.9" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">0.5</text>
-<line x1="98.0" y1="78.7" x2="1122.0" y2="78.7" stroke="#d9d2bf" stroke-width="1" />
-<text x="86.0" y="83.7" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">1</text>
-<line x1="117.7" y1="90.0" x2="117.7" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
+<line x1="98.0" y1="568.2" x2="1122.0" y2="568.2" stroke="#d9d2bf" stroke-width="1" />
+<text x="86.0" y="573.2" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">-2</text>
+<line x1="98.0" y1="489.4" x2="1122.0" y2="489.4" stroke="#d9d2bf" stroke-width="1" />
+<text x="86.0" y="494.4" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">-1.5</text>
+<line x1="98.0" y1="410.5" x2="1122.0" y2="410.5" stroke="#d9d2bf" stroke-width="1" />
+<text x="86.0" y="415.5" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">-1</text>
+<line x1="98.0" y1="331.6" x2="1122.0" y2="331.6" stroke="#d9d2bf" stroke-width="1" />
+<text x="86.0" y="336.6" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">-0.5</text>
+<line x1="98.0" y1="252.8" x2="1122.0" y2="252.8" stroke="#d9d2bf" stroke-width="1" />
+<text x="86.0" y="257.8" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">0</text>
+<line x1="98.0" y1="173.9" x2="1122.0" y2="173.9" stroke="#d9d2bf" stroke-width="1" />
+<text x="86.0" y="178.9" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">0.5</text>
+<line x1="98.0" y1="95.0" x2="1122.0" y2="95.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="86.0" y="100.0" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">1</text>
+<line x1="117.7" y1="106.0" x2="117.7" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
 <text x="117.7" y="670.0" text-anchor="middle" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">10</text>
-<line x1="147.8" y1="90.0" x2="147.8" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
+<line x1="147.8" y1="106.0" x2="147.8" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
 <text x="147.8" y="670.0" text-anchor="middle" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">25</text>
-<line x1="198.1" y1="90.0" x2="198.1" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
+<line x1="198.1" y1="106.0" x2="198.1" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
 <text x="198.1" y="670.0" text-anchor="middle" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">50</text>
-<line x1="248.3" y1="90.0" x2="248.3" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
+<line x1="248.3" y1="106.0" x2="248.3" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
 <text x="248.3" y="670.0" text-anchor="middle" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">75</text>
-<line x1="298.5" y1="90.0" x2="298.5" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
+<line x1="298.5" y1="106.0" x2="298.5" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
 <text x="298.5" y="670.0" text-anchor="middle" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">100</text>
-<line x1="348.8" y1="90.0" x2="348.8" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
+<line x1="348.8" y1="106.0" x2="348.8" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
 <text x="348.8" y="670.0" text-anchor="middle" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">125</text>
-<line x1="600.0" y1="90.0" x2="600.0" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
+<line x1="600.0" y1="106.0" x2="600.0" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
 <text x="600.0" y="670.0" text-anchor="middle" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">250</text>
-<line x1="1102.3" y1="90.0" x2="1102.3" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
+<line x1="1102.3" y1="106.0" x2="1102.3" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
 <text x="1102.3" y="670.0" text-anchor="middle" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">500</text>
 <line x1="98.0" y1="648.0" x2="1122.0" y2="648.0" stroke="#544b3d" stroke-width="1.6" />
-<line x1="98.0" y1="90.0" x2="98.0" y2="648.0" stroke="#544b3d" stroke-width="1.6" />
-<path d="M 117.69 559.17 L 147.83 148.56 L 198.07 141.65 L 248.30 253.82 L 298.54 138.60 L 348.78 135.93 L 599.95 134.04 L 1102.31 133.99" fill="none" stroke="#1b4965" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
-<circle cx="117.7" cy="559.2" r="4.4" fill="#1b4965" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="147.8" cy="148.6" r="4.4" fill="#1b4965" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="198.1" cy="141.6" r="4.4" fill="#1b4965" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="248.3" cy="253.8" r="4.4" fill="#1b4965" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="298.5" cy="138.6" r="4.4" fill="#1b4965" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="348.8" cy="135.9" r="4.4" fill="#1b4965" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="600.0" cy="134.0" r="4.4" fill="#1b4965" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="1102.3" cy="134.0" r="4.4" fill="#1b4965" stroke="#fffdf7" stroke-width="1.4" />
-<path d="M 117.69 609.52 L 147.83 159.44 L 198.07 137.32 L 248.30 135.46 L 298.54 132.19 L 348.78 135.42 L 599.95 135.73 L 1102.31 128.48" fill="none" stroke="#ca6702" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
-<circle cx="117.7" cy="609.5" r="4.4" fill="#ca6702" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="147.8" cy="159.4" r="4.4" fill="#ca6702" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="198.1" cy="137.3" r="4.4" fill="#ca6702" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="248.3" cy="135.5" r="4.4" fill="#ca6702" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="298.5" cy="132.2" r="4.4" fill="#ca6702" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="348.8" cy="135.4" r="4.4" fill="#ca6702" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="600.0" cy="135.7" r="4.4" fill="#ca6702" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="1102.3" cy="128.5" r="4.4" fill="#ca6702" stroke="#fffdf7" stroke-width="1.4" />
-<path d="M 117.69 321.65 L 147.83 142.26 L 198.07 145.00 L 248.30 131.19 L 298.54 134.06 L 348.78 130.06 L 599.95 130.62 L 1102.31 129.96" fill="none" stroke="#0b6e4f" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
-<circle cx="117.7" cy="321.7" r="4.4" fill="#0b6e4f" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="147.8" cy="142.3" r="4.4" fill="#0b6e4f" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="198.1" cy="145.0" r="4.4" fill="#0b6e4f" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="248.3" cy="131.2" r="4.4" fill="#0b6e4f" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="298.5" cy="134.1" r="4.4" fill="#0b6e4f" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="348.8" cy="130.1" r="4.4" fill="#0b6e4f" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="600.0" cy="130.6" r="4.4" fill="#0b6e4f" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="1102.3" cy="130.0" r="4.4" fill="#0b6e4f" stroke="#fffdf7" stroke-width="1.4" />
-<path d="M 117.69 212.85 L 147.83 163.08 L 198.07 139.18 L 248.30 135.39 L 298.54 133.39 L 348.78 134.08 L 599.95 131.70 L 1102.31 133.14" fill="none" stroke="#b02e0c" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
-<circle cx="117.7" cy="212.9" r="4.4" fill="#b02e0c" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="147.8" cy="163.1" r="4.4" fill="#b02e0c" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="198.1" cy="139.2" r="4.4" fill="#b02e0c" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="248.3" cy="135.4" r="4.4" fill="#b02e0c" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="298.5" cy="133.4" r="4.4" fill="#b02e0c" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="348.8" cy="134.1" r="4.4" fill="#b02e0c" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="600.0" cy="131.7" r="4.4" fill="#b02e0c" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="1102.3" cy="133.1" r="4.4" fill="#b02e0c" stroke="#fffdf7" stroke-width="1.4" />
-<path d="M 117.69 183.65 L 147.83 156.58 L 198.07 144.95 L 248.30 143.53 L 298.54 135.47 L 348.78 132.06 L 599.95 134.33 L 1102.31 130.36" fill="none" stroke="#5f0f40" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
-<circle cx="117.7" cy="183.7" r="4.4" fill="#5f0f40" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="147.8" cy="156.6" r="4.4" fill="#5f0f40" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="198.1" cy="145.0" r="4.4" fill="#5f0f40" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="248.3" cy="143.5" r="4.4" fill="#5f0f40" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="298.5" cy="135.5" r="4.4" fill="#5f0f40" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="348.8" cy="132.1" r="4.4" fill="#5f0f40" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="600.0" cy="134.3" r="4.4" fill="#5f0f40" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="1102.3" cy="130.4" r="4.4" fill="#5f0f40" stroke="#fffdf7" stroke-width="1.4" />
-<path d="M 117.69 187.09 L 147.83 158.91 L 198.07 136.40 L 248.30 142.57 L 298.54 134.25 L 348.78 134.53 L 599.95 131.41 L 1102.31 129.35" fill="none" stroke="#3a5a40" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
-<circle cx="117.7" cy="187.1" r="4.4" fill="#3a5a40" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="147.8" cy="158.9" r="4.4" fill="#3a5a40" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="198.1" cy="136.4" r="4.4" fill="#3a5a40" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="248.3" cy="142.6" r="4.4" fill="#3a5a40" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="298.5" cy="134.2" r="4.4" fill="#3a5a40" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="348.8" cy="134.5" r="4.4" fill="#3a5a40" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="600.0" cy="131.4" r="4.4" fill="#3a5a40" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="1102.3" cy="129.4" r="4.4" fill="#3a5a40" stroke="#fffdf7" stroke-width="1.4" />
-<path d="M 117.69 181.69 L 147.83 148.31 L 198.07 144.83 L 248.30 136.79 L 298.54 131.69 L 348.78 135.49 L 599.95 131.77 L 1102.31 135.30" fill="none" stroke="#6c757d" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
-<circle cx="117.7" cy="181.7" r="4.4" fill="#6c757d" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="147.8" cy="148.3" r="4.4" fill="#6c757d" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="198.1" cy="144.8" r="4.4" fill="#6c757d" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="248.3" cy="136.8" r="4.4" fill="#6c757d" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="298.5" cy="131.7" r="4.4" fill="#6c757d" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="348.8" cy="135.5" r="4.4" fill="#6c757d" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="600.0" cy="131.8" r="4.4" fill="#6c757d" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="1102.3" cy="135.3" r="4.4" fill="#6c757d" stroke="#fffdf7" stroke-width="1.4" />
-<path d="M 117.69 155.45 L 147.83 142.49 L 198.07 140.08 L 248.30 136.03 L 298.54 133.65 L 348.78 132.19 L 599.95 132.40 L 1102.31 131.89" fill="none" stroke="#7b2cbf" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
-<circle cx="117.7" cy="155.5" r="4.4" fill="#7b2cbf" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="147.8" cy="142.5" r="4.4" fill="#7b2cbf" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="198.1" cy="140.1" r="4.4" fill="#7b2cbf" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="248.3" cy="136.0" r="4.4" fill="#7b2cbf" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="298.5" cy="133.7" r="4.4" fill="#7b2cbf" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="348.8" cy="132.2" r="4.4" fill="#7b2cbf" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="600.0" cy="132.4" r="4.4" fill="#7b2cbf" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="1102.3" cy="131.9" r="4.4" fill="#7b2cbf" stroke="#fffdf7" stroke-width="1.4" />
-<line x1="902.0" y1="98.0" x2="926.0" y2="98.0" stroke="#1b4965" stroke-width="4" stroke-linecap="round" />
-<text x="936.0" y="102.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">10/5</text>
-<line x1="902.0" y1="122.0" x2="926.0" y2="122.0" stroke="#ca6702" stroke-width="4" stroke-linecap="round" />
-<text x="936.0" y="126.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">25/10</text>
-<line x1="902.0" y1="146.0" x2="926.0" y2="146.0" stroke="#0b6e4f" stroke-width="4" stroke-linecap="round" />
-<text x="936.0" y="150.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">50/25</text>
-<line x1="902.0" y1="170.0" x2="926.0" y2="170.0" stroke="#b02e0c" stroke-width="4" stroke-linecap="round" />
-<text x="936.0" y="174.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">75/50</text>
-<line x1="902.0" y1="194.0" x2="926.0" y2="194.0" stroke="#5f0f40" stroke-width="4" stroke-linecap="round" />
-<text x="936.0" y="198.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">100/75</text>
-<line x1="902.0" y1="218.0" x2="926.0" y2="218.0" stroke="#3a5a40" stroke-width="4" stroke-linecap="round" />
-<text x="936.0" y="222.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">125/100</text>
-<line x1="902.0" y1="242.0" x2="926.0" y2="242.0" stroke="#6c757d" stroke-width="4" stroke-linecap="round" />
-<text x="936.0" y="246.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">200/125</text>
-<line x1="902.0" y1="266.0" x2="926.0" y2="266.0" stroke="#7b2cbf" stroke-width="4" stroke-linecap="round" />
-<text x="936.0" y="270.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">350/200</text>
+<line x1="98.0" y1="106.0" x2="98.0" y2="648.0" stroke="#544b3d" stroke-width="1.6" />
+<path d="M 117.69 561.72 L 147.83 162.88 L 198.07 156.17 L 248.30 265.12 L 298.54 153.21 L 348.78 150.61 L 599.95 148.77 L 1102.31 148.73" fill="none" stroke="#1b4965" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="117.7" cy="561.7" r="4.4" fill="#1b4965" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="147.8" cy="162.9" r="4.4" fill="#1b4965" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="198.1" cy="156.2" r="4.4" fill="#1b4965" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="248.3" cy="265.1" r="4.4" fill="#1b4965" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="298.5" cy="153.2" r="4.4" fill="#1b4965" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="348.8" cy="150.6" r="4.4" fill="#1b4965" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="600.0" cy="148.8" r="4.4" fill="#1b4965" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="1102.3" cy="148.7" r="4.4" fill="#1b4965" stroke="#fffdf7" stroke-width="1.4" />
+<path d="M 117.69 610.62 L 147.83 173.45 L 198.07 151.96 L 248.30 150.15 L 298.54 146.98 L 348.78 150.12 L 599.95 150.42 L 1102.31 143.38" fill="none" stroke="#ca6702" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="117.7" cy="610.6" r="4.4" fill="#ca6702" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="147.8" cy="173.4" r="4.4" fill="#ca6702" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="198.1" cy="152.0" r="4.4" fill="#ca6702" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="248.3" cy="150.2" r="4.4" fill="#ca6702" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="298.5" cy="147.0" r="4.4" fill="#ca6702" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="348.8" cy="150.1" r="4.4" fill="#ca6702" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="600.0" cy="150.4" r="4.4" fill="#ca6702" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="1102.3" cy="143.4" r="4.4" fill="#ca6702" stroke="#fffdf7" stroke-width="1.4" />
+<path d="M 117.69 331.01 L 147.83 156.76 L 198.07 159.43 L 248.30 146.01 L 298.54 148.79 L 348.78 144.91 L 599.95 145.46 L 1102.31 144.81" fill="none" stroke="#0b6e4f" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="117.7" cy="331.0" r="4.4" fill="#0b6e4f" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="147.8" cy="156.8" r="4.4" fill="#0b6e4f" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="198.1" cy="159.4" r="4.4" fill="#0b6e4f" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="248.3" cy="146.0" r="4.4" fill="#0b6e4f" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="298.5" cy="148.8" r="4.4" fill="#0b6e4f" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="348.8" cy="144.9" r="4.4" fill="#0b6e4f" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="600.0" cy="145.5" r="4.4" fill="#0b6e4f" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="1102.3" cy="144.8" r="4.4" fill="#0b6e4f" stroke="#fffdf7" stroke-width="1.4" />
+<path d="M 117.69 225.33 L 147.83 176.99 L 198.07 153.77 L 248.30 150.09 L 298.54 148.15 L 348.78 148.82 L 599.95 146.51 L 1102.31 147.90" fill="none" stroke="#b02e0c" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="117.7" cy="225.3" r="4.4" fill="#b02e0c" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="147.8" cy="177.0" r="4.4" fill="#b02e0c" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="198.1" cy="153.8" r="4.4" fill="#b02e0c" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="248.3" cy="150.1" r="4.4" fill="#b02e0c" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="298.5" cy="148.1" r="4.4" fill="#b02e0c" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="348.8" cy="148.8" r="4.4" fill="#b02e0c" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="600.0" cy="146.5" r="4.4" fill="#b02e0c" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="1102.3" cy="147.9" r="4.4" fill="#b02e0c" stroke="#fffdf7" stroke-width="1.4" />
+<path d="M 117.69 196.97 L 147.83 170.67 L 198.07 159.38 L 248.30 158.00 L 298.54 150.16 L 348.78 146.86 L 599.95 149.05 L 1102.31 145.20" fill="none" stroke="#5f0f40" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="117.7" cy="197.0" r="4.4" fill="#5f0f40" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="147.8" cy="170.7" r="4.4" fill="#5f0f40" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="198.1" cy="159.4" r="4.4" fill="#5f0f40" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="248.3" cy="158.0" r="4.4" fill="#5f0f40" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="298.5" cy="150.2" r="4.4" fill="#5f0f40" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="348.8" cy="146.9" r="4.4" fill="#5f0f40" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="600.0" cy="149.1" r="4.4" fill="#5f0f40" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="1102.3" cy="145.2" r="4.4" fill="#5f0f40" stroke="#fffdf7" stroke-width="1.4" />
+<path d="M 117.69 200.31 L 147.83 172.94 L 198.07 151.07 L 248.30 157.06 L 298.54 148.98 L 348.78 149.25 L 599.95 146.22 L 1102.31 144.22" fill="none" stroke="#3a5a40" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="117.7" cy="200.3" r="4.4" fill="#3a5a40" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="147.8" cy="172.9" r="4.4" fill="#3a5a40" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="198.1" cy="151.1" r="4.4" fill="#3a5a40" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="248.3" cy="157.1" r="4.4" fill="#3a5a40" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="298.5" cy="149.0" r="4.4" fill="#3a5a40" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="348.8" cy="149.3" r="4.4" fill="#3a5a40" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="600.0" cy="146.2" r="4.4" fill="#3a5a40" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="1102.3" cy="144.2" r="4.4" fill="#3a5a40" stroke="#fffdf7" stroke-width="1.4" />
+<path d="M 117.69 195.06 L 147.83 162.64 L 198.07 159.26 L 248.30 151.45 L 298.54 146.50 L 348.78 150.19 L 599.95 146.57 L 1102.31 150.01" fill="none" stroke="#6c757d" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="117.7" cy="195.1" r="4.4" fill="#6c757d" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="147.8" cy="162.6" r="4.4" fill="#6c757d" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="198.1" cy="159.3" r="4.4" fill="#6c757d" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="248.3" cy="151.4" r="4.4" fill="#6c757d" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="298.5" cy="146.5" r="4.4" fill="#6c757d" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="348.8" cy="150.2" r="4.4" fill="#6c757d" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="600.0" cy="146.6" r="4.4" fill="#6c757d" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="1102.3" cy="150.0" r="4.4" fill="#6c757d" stroke="#fffdf7" stroke-width="1.4" />
+<path d="M 117.69 169.57 L 147.83 156.98 L 198.07 154.64 L 248.30 150.71 L 298.54 148.40 L 348.78 146.98 L 599.95 147.19 L 1102.31 146.69" fill="none" stroke="#7b2cbf" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="117.7" cy="169.6" r="4.4" fill="#7b2cbf" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="147.8" cy="157.0" r="4.4" fill="#7b2cbf" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="198.1" cy="154.6" r="4.4" fill="#7b2cbf" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="248.3" cy="150.7" r="4.4" fill="#7b2cbf" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="298.5" cy="148.4" r="4.4" fill="#7b2cbf" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="348.8" cy="147.0" r="4.4" fill="#7b2cbf" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="600.0" cy="147.2" r="4.4" fill="#7b2cbf" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="1102.3" cy="146.7" r="4.4" fill="#7b2cbf" stroke="#fffdf7" stroke-width="1.4" />
+<line x1="902.0" y1="114.0" x2="926.0" y2="114.0" stroke="#1b4965" stroke-width="4" stroke-linecap="round" />
+<text x="936.0" y="118.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">10/5</text>
+<line x1="902.0" y1="138.0" x2="926.0" y2="138.0" stroke="#ca6702" stroke-width="4" stroke-linecap="round" />
+<text x="936.0" y="142.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">25/10</text>
+<line x1="902.0" y1="162.0" x2="926.0" y2="162.0" stroke="#0b6e4f" stroke-width="4" stroke-linecap="round" />
+<text x="936.0" y="166.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">50/25</text>
+<line x1="902.0" y1="186.0" x2="926.0" y2="186.0" stroke="#b02e0c" stroke-width="4" stroke-linecap="round" />
+<text x="936.0" y="190.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">75/50</text>
+<line x1="902.0" y1="210.0" x2="926.0" y2="210.0" stroke="#5f0f40" stroke-width="4" stroke-linecap="round" />
+<text x="936.0" y="214.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">100/75</text>
+<line x1="902.0" y1="234.0" x2="926.0" y2="234.0" stroke="#3a5a40" stroke-width="4" stroke-linecap="round" />
+<text x="936.0" y="238.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">125/100</text>
+<line x1="902.0" y1="258.0" x2="926.0" y2="258.0" stroke="#6c757d" stroke-width="4" stroke-linecap="round" />
+<text x="936.0" y="262.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">200/125</text>
+<line x1="902.0" y1="282.0" x2="926.0" y2="282.0" stroke="#7b2cbf" stroke-width="4" stroke-linecap="round" />
+<text x="936.0" y="286.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">350/200</text>
 <text x="610.0" y="694.0" text-anchor="middle" fill="#1f1d1a" font-size="14" font-family="Trebuchet MS, Arial, sans-serif">Epoch Budget</text>
-<text x="24" y="369.0" transform="rotate(-90 24 369.0)" text-anchor="middle" fill="#1f1d1a" font-size="14" font-family="Trebuchet MS, Arial, sans-serif">Test R^2</text>
+<text x="24" y="377.0" transform="rotate(-90 24 377.0)" text-anchor="middle" fill="#1f1d1a" font-size="14" font-family="Trebuchet MS, Arial, sans-serif">Test R^2</text>
 </svg>

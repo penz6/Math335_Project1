@@ -2,86 +2,123 @@
 <rect width="1180" height="720" fill="#f7f4ea" />
 <rect x="28.0" y="24.0" width="1124.0" height="672.0" rx="18" fill="#fffdf7" stroke="#e6dec9" />
 <text x="52.0" y="58.0" fill="#1f1d1a" font-size="22" font-weight="700" font-family="Georgia, serif">Validation RMSE vs Epoch Budget</text>
-<line x1="98.0" y1="663.9" x2="1122.0" y2="663.9" stroke="#d9d2bf" stroke-width="1" />
-<text x="86.0" y="668.9" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">0</text>
-<line x1="98.0" y1="532.4" x2="1122.0" y2="532.4" stroke="#d9d2bf" stroke-width="1" />
-<text x="86.0" y="537.4" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">500k</text>
-<line x1="98.0" y1="401.0" x2="1122.0" y2="401.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="86.0" y="406.0" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">1.0M</text>
-<line x1="98.0" y1="269.5" x2="1122.0" y2="269.5" stroke="#d9d2bf" stroke-width="1" />
-<text x="86.0" y="274.5" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">1.5M</text>
-<line x1="98.0" y1="138.1" x2="1122.0" y2="138.1" stroke="#d9d2bf" stroke-width="1" />
-<text x="86.0" y="143.1" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">2.0M</text>
-<line x1="98.0" y1="6.6" x2="1122.0" y2="6.6" stroke="#d9d2bf" stroke-width="1" />
-<text x="86.0" y="11.6" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">2.5M</text>
-<line x1="117.7" y1="90.0" x2="117.7" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="52.0" y="82.0" fill="#6f6659" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">Lower is better.</text>
+<line x1="98.0" y1="667.2" x2="1122.0" y2="667.2" stroke="#d9d2bf" stroke-width="1" />
+<text x="86.0" y="672.2" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">0</text>
+<line x1="98.0" y1="523.6" x2="1122.0" y2="523.6" stroke="#d9d2bf" stroke-width="1" />
+<text x="86.0" y="528.6" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">500k</text>
+<line x1="98.0" y1="379.9" x2="1122.0" y2="379.9" stroke="#d9d2bf" stroke-width="1" />
+<text x="86.0" y="384.9" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">1.0M</text>
+<line x1="98.0" y1="236.3" x2="1122.0" y2="236.3" stroke="#d9d2bf" stroke-width="1" />
+<text x="86.0" y="241.3" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">1.5M</text>
+<line x1="98.0" y1="92.7" x2="1122.0" y2="92.7" stroke="#d9d2bf" stroke-width="1" />
+<text x="86.0" y="97.7" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">2.0M</text>
+<line x1="117.7" y1="106.0" x2="117.7" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
 <text x="117.7" y="670.0" text-anchor="middle" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">10</text>
-<line x1="246.1" y1="90.0" x2="246.1" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="246.1" y="670.0" text-anchor="middle" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">25</text>
-<line x1="460.2" y1="90.0" x2="460.2" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="460.2" y="670.0" text-anchor="middle" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">50</text>
-<line x1="674.2" y1="90.0" x2="674.2" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="674.2" y="670.0" text-anchor="middle" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">75</text>
-<line x1="888.3" y1="90.0" x2="888.3" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="888.3" y="670.0" text-anchor="middle" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">100</text>
-<line x1="1102.3" y1="90.0" x2="1102.3" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="1102.3" y="670.0" text-anchor="middle" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">125</text>
+<line x1="147.8" y1="106.0" x2="147.8" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="147.8" y="670.0" text-anchor="middle" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">25</text>
+<line x1="198.1" y1="106.0" x2="198.1" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="198.1" y="670.0" text-anchor="middle" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">50</text>
+<line x1="248.3" y1="106.0" x2="248.3" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="248.3" y="670.0" text-anchor="middle" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">75</text>
+<line x1="298.5" y1="106.0" x2="298.5" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="298.5" y="670.0" text-anchor="middle" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">100</text>
+<line x1="348.8" y1="106.0" x2="348.8" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="348.8" y="670.0" text-anchor="middle" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">125</text>
+<line x1="600.0" y1="106.0" x2="600.0" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="600.0" y="670.0" text-anchor="middle" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">250</text>
+<line x1="1102.3" y1="106.0" x2="1102.3" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="1102.3" y="670.0" text-anchor="middle" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">500</text>
 <line x1="98.0" y1="648.0" x2="1122.0" y2="648.0" stroke="#544b3d" stroke-width="1.6" />
-<line x1="98.0" y1="90.0" x2="98.0" y2="648.0" stroke="#544b3d" stroke-width="1.6" />
-<path d="M 117.69 296.48 L 246.12 413.71 L 460.17 598.43 L 674.21 603.99 L 888.26 604.19 L 1102.31 603.49" fill="none" stroke="#1b4965" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
-<circle cx="117.7" cy="296.5" r="4.4" fill="#1b4965" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="246.1" cy="413.7" r="4.4" fill="#1b4965" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="460.2" cy="598.4" r="4.4" fill="#1b4965" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="674.2" cy="604.0" r="4.4" fill="#1b4965" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="888.3" cy="604.2" r="4.4" fill="#1b4965" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="1102.3" cy="603.5" r="4.4" fill="#1b4965" stroke="#fffdf7" stroke-width="1.4" />
-<path d="M 117.69 128.48 L 246.12 510.98 L 460.17 602.55 L 674.21 605.03 L 888.26 608.14 L 1102.31 607.87" fill="none" stroke="#ca6702" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
-<circle cx="117.7" cy="128.5" r="4.4" fill="#ca6702" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="246.1" cy="511.0" r="4.4" fill="#ca6702" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="460.2" cy="602.5" r="4.4" fill="#ca6702" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="674.2" cy="605.0" r="4.4" fill="#ca6702" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="888.3" cy="608.1" r="4.4" fill="#ca6702" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="1102.3" cy="607.9" r="4.4" fill="#ca6702" stroke="#fffdf7" stroke-width="1.4" />
-<path d="M 117.69 552.08 L 246.12 572.26 L 460.17 603.16 L 674.21 608.23 L 888.26 607.05 L 1102.31 606.00" fill="none" stroke="#0b6e4f" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
-<circle cx="117.7" cy="552.1" r="4.4" fill="#0b6e4f" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="246.1" cy="572.3" r="4.4" fill="#0b6e4f" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="460.2" cy="603.2" r="4.4" fill="#0b6e4f" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="674.2" cy="608.2" r="4.4" fill="#0b6e4f" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="888.3" cy="607.1" r="4.4" fill="#0b6e4f" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="1102.3" cy="606.0" r="4.4" fill="#0b6e4f" stroke="#fffdf7" stroke-width="1.4" />
-<path d="M 117.69 553.25 L 246.12 562.55 L 460.17 606.43 L 674.21 607.44 L 888.26 609.28 L 1102.31 608.19" fill="none" stroke="#b02e0c" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
-<circle cx="117.7" cy="553.3" r="4.4" fill="#b02e0c" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="246.1" cy="562.5" r="4.4" fill="#b02e0c" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="460.2" cy="606.4" r="4.4" fill="#b02e0c" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="674.2" cy="607.4" r="4.4" fill="#b02e0c" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="888.3" cy="609.3" r="4.4" fill="#b02e0c" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="1102.3" cy="608.2" r="4.4" fill="#b02e0c" stroke="#fffdf7" stroke-width="1.4" />
-<path d="M 117.69 554.13 L 246.12 593.38 L 460.17 604.69 L 674.21 607.36 L 888.26 608.90 L 1102.31 609.52" fill="none" stroke="#5f0f40" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
-<circle cx="117.7" cy="554.1" r="4.4" fill="#5f0f40" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="246.1" cy="593.4" r="4.4" fill="#5f0f40" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="460.2" cy="604.7" r="4.4" fill="#5f0f40" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="674.2" cy="607.4" r="4.4" fill="#5f0f40" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="888.3" cy="608.9" r="4.4" fill="#5f0f40" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="1102.3" cy="609.5" r="4.4" fill="#5f0f40" stroke="#fffdf7" stroke-width="1.4" />
-<path d="M 117.69 581.67 L 246.12 587.27 L 460.17 605.57 L 674.21 606.40 L 888.26 608.59 L 1102.31 607.54" fill="none" stroke="#3a5a40" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
-<circle cx="117.7" cy="581.7" r="4.4" fill="#3a5a40" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="246.1" cy="587.3" r="4.4" fill="#3a5a40" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="460.2" cy="605.6" r="4.4" fill="#3a5a40" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="674.2" cy="606.4" r="4.4" fill="#3a5a40" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="888.3" cy="608.6" r="4.4" fill="#3a5a40" stroke="#fffdf7" stroke-width="1.4" />
-<circle cx="1102.3" cy="607.5" r="4.4" fill="#3a5a40" stroke="#fffdf7" stroke-width="1.4" />
-<line x1="932.0" y1="98.0" x2="956.0" y2="98.0" stroke="#1b4965" stroke-width="4" stroke-linecap="round" />
-<text x="966.0" y="102.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">10 neurons</text>
-<line x1="932.0" y1="122.0" x2="956.0" y2="122.0" stroke="#ca6702" stroke-width="4" stroke-linecap="round" />
-<text x="966.0" y="126.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">25 neurons</text>
-<line x1="932.0" y1="146.0" x2="956.0" y2="146.0" stroke="#0b6e4f" stroke-width="4" stroke-linecap="round" />
-<text x="966.0" y="150.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">50 neurons</text>
-<line x1="932.0" y1="170.0" x2="956.0" y2="170.0" stroke="#b02e0c" stroke-width="4" stroke-linecap="round" />
-<text x="966.0" y="174.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">75 neurons</text>
-<line x1="932.0" y1="194.0" x2="956.0" y2="194.0" stroke="#5f0f40" stroke-width="4" stroke-linecap="round" />
-<text x="966.0" y="198.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">100 neurons</text>
-<line x1="932.0" y1="218.0" x2="956.0" y2="218.0" stroke="#3a5a40" stroke-width="4" stroke-linecap="round" />
-<text x="966.0" y="222.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">125 neurons</text>
+<line x1="98.0" y1="106.0" x2="98.0" y2="648.0" stroke="#544b3d" stroke-width="1.6" />
+<path d="M 117.69 143.38 L 147.83 597.43 L 198.07 600.04 L 248.30 602.33 L 298.54 601.46 L 348.78 602.48 L 599.95 602.52 L 1102.31 602.61" fill="none" stroke="#1b4965" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="117.7" cy="143.4" r="4.4" fill="#1b4965" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="147.8" cy="597.4" r="4.4" fill="#1b4965" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="198.1" cy="600.0" r="4.4" fill="#1b4965" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="248.3" cy="602.3" r="4.4" fill="#1b4965" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="298.5" cy="601.5" r="4.4" fill="#1b4965" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="348.8" cy="602.5" r="4.4" fill="#1b4965" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="600.0" cy="602.5" r="4.4" fill="#1b4965" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="1102.3" cy="602.6" r="4.4" fill="#1b4965" stroke="#fffdf7" stroke-width="1.4" />
+<path d="M 117.69 387.95 L 147.83 594.32 L 198.07 601.26 L 248.30 602.58 L 298.54 602.61 L 348.78 602.94 L 599.95 602.58 L 1102.31 607.34" fill="none" stroke="#ca6702" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="117.7" cy="388.0" r="4.4" fill="#ca6702" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="147.8" cy="594.3" r="4.4" fill="#ca6702" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="198.1" cy="601.3" r="4.4" fill="#ca6702" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="248.3" cy="602.6" r="4.4" fill="#ca6702" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="298.5" cy="602.6" r="4.4" fill="#ca6702" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="348.8" cy="602.9" r="4.4" fill="#ca6702" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="600.0" cy="602.6" r="4.4" fill="#ca6702" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="1102.3" cy="607.3" r="4.4" fill="#ca6702" stroke="#fffdf7" stroke-width="1.4" />
+<path d="M 117.69 487.25 L 147.83 572.15 L 198.07 602.55 L 248.30 605.04 L 298.54 606.76 L 348.78 605.11 L 599.95 606.23 L 1102.31 609.75" fill="none" stroke="#0b6e4f" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="117.7" cy="487.2" r="4.4" fill="#0b6e4f" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="147.8" cy="572.1" r="4.4" fill="#0b6e4f" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="198.1" cy="602.6" r="4.4" fill="#0b6e4f" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="248.3" cy="605.0" r="4.4" fill="#0b6e4f" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="298.5" cy="606.8" r="4.4" fill="#0b6e4f" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="348.8" cy="605.1" r="4.4" fill="#0b6e4f" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="600.0" cy="606.2" r="4.4" fill="#0b6e4f" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="1102.3" cy="609.7" r="4.4" fill="#0b6e4f" stroke="#fffdf7" stroke-width="1.4" />
+<path d="M 117.69 570.53 L 147.83 582.77 L 198.07 603.92 L 248.30 604.98 L 298.54 607.76 L 348.78 607.41 L 599.95 609.67 L 1102.31 609.83" fill="none" stroke="#b02e0c" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="117.7" cy="570.5" r="4.4" fill="#b02e0c" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="147.8" cy="582.8" r="4.4" fill="#b02e0c" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="198.1" cy="603.9" r="4.4" fill="#b02e0c" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="248.3" cy="605.0" r="4.4" fill="#b02e0c" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="298.5" cy="607.8" r="4.4" fill="#b02e0c" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="348.8" cy="607.4" r="4.4" fill="#b02e0c" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="600.0" cy="609.7" r="4.4" fill="#b02e0c" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="1102.3" cy="609.8" r="4.4" fill="#b02e0c" stroke="#fffdf7" stroke-width="1.4" />
+<path d="M 117.69 508.27 L 147.83 598.02 L 198.07 603.82 L 248.30 604.90 L 298.54 607.81 L 348.78 607.90 L 599.95 609.47 L 1102.31 609.88" fill="none" stroke="#5f0f40" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="117.7" cy="508.3" r="4.4" fill="#5f0f40" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="147.8" cy="598.0" r="4.4" fill="#5f0f40" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="198.1" cy="603.8" r="4.4" fill="#5f0f40" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="248.3" cy="604.9" r="4.4" fill="#5f0f40" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="298.5" cy="607.8" r="4.4" fill="#5f0f40" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="348.8" cy="607.9" r="4.4" fill="#5f0f40" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="600.0" cy="609.5" r="4.4" fill="#5f0f40" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="1102.3" cy="609.9" r="4.4" fill="#5f0f40" stroke="#fffdf7" stroke-width="1.4" />
+<path d="M 117.69 559.30 L 147.83 572.65 L 198.07 603.85 L 248.30 605.24 L 298.54 607.25 L 348.78 607.16 L 599.95 609.89 L 1102.31 610.62" fill="none" stroke="#3a5a40" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="117.7" cy="559.3" r="4.4" fill="#3a5a40" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="147.8" cy="572.6" r="4.4" fill="#3a5a40" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="198.1" cy="603.8" r="4.4" fill="#3a5a40" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="248.3" cy="605.2" r="4.4" fill="#3a5a40" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="298.5" cy="607.2" r="4.4" fill="#3a5a40" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="348.8" cy="607.2" r="4.4" fill="#3a5a40" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="600.0" cy="609.9" r="4.4" fill="#3a5a40" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="1102.3" cy="610.6" r="4.4" fill="#3a5a40" stroke="#fffdf7" stroke-width="1.4" />
+<path d="M 117.69 583.89 L 147.83 600.18 L 198.07 603.72 L 248.30 605.68 L 298.54 606.30 L 348.78 607.77 L 599.95 609.58 L 1102.31 609.85" fill="none" stroke="#6c757d" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="117.7" cy="583.9" r="4.4" fill="#6c757d" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="147.8" cy="600.2" r="4.4" fill="#6c757d" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="198.1" cy="603.7" r="4.4" fill="#6c757d" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="248.3" cy="605.7" r="4.4" fill="#6c757d" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="298.5" cy="606.3" r="4.4" fill="#6c757d" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="348.8" cy="607.8" r="4.4" fill="#6c757d" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="600.0" cy="609.6" r="4.4" fill="#6c757d" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="1102.3" cy="609.9" r="4.4" fill="#6c757d" stroke="#fffdf7" stroke-width="1.4" />
+<path d="M 117.69 595.83 L 147.83 602.38 L 198.07 605.57 L 248.30 607.02 L 298.54 608.09 L 348.78 607.96 L 599.95 609.81 L 1102.31 609.73" fill="none" stroke="#7b2cbf" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="117.7" cy="595.8" r="4.4" fill="#7b2cbf" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="147.8" cy="602.4" r="4.4" fill="#7b2cbf" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="198.1" cy="605.6" r="4.4" fill="#7b2cbf" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="248.3" cy="607.0" r="4.4" fill="#7b2cbf" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="298.5" cy="608.1" r="4.4" fill="#7b2cbf" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="348.8" cy="608.0" r="4.4" fill="#7b2cbf" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="600.0" cy="609.8" r="4.4" fill="#7b2cbf" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="1102.3" cy="609.7" r="4.4" fill="#7b2cbf" stroke="#fffdf7" stroke-width="1.4" />
+<line x1="932.0" y1="114.0" x2="956.0" y2="114.0" stroke="#1b4965" stroke-width="4" stroke-linecap="round" />
+<text x="966.0" y="118.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">10 neurons</text>
+<line x1="932.0" y1="138.0" x2="956.0" y2="138.0" stroke="#ca6702" stroke-width="4" stroke-linecap="round" />
+<text x="966.0" y="142.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">25 neurons</text>
+<line x1="932.0" y1="162.0" x2="956.0" y2="162.0" stroke="#0b6e4f" stroke-width="4" stroke-linecap="round" />
+<text x="966.0" y="166.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">50 neurons</text>
+<line x1="932.0" y1="186.0" x2="956.0" y2="186.0" stroke="#b02e0c" stroke-width="4" stroke-linecap="round" />
+<text x="966.0" y="190.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">75 neurons</text>
+<line x1="932.0" y1="210.0" x2="956.0" y2="210.0" stroke="#5f0f40" stroke-width="4" stroke-linecap="round" />
+<text x="966.0" y="214.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">100 neurons</text>
+<line x1="932.0" y1="234.0" x2="956.0" y2="234.0" stroke="#3a5a40" stroke-width="4" stroke-linecap="round" />
+<text x="966.0" y="238.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">125 neurons</text>
+<line x1="932.0" y1="258.0" x2="956.0" y2="258.0" stroke="#6c757d" stroke-width="4" stroke-linecap="round" />
+<text x="966.0" y="262.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">200 neurons</text>
+<line x1="932.0" y1="282.0" x2="956.0" y2="282.0" stroke="#7b2cbf" stroke-width="4" stroke-linecap="round" />
+<text x="966.0" y="286.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">350 neurons</text>
 <text x="610.0" y="694.0" text-anchor="middle" fill="#1f1d1a" font-size="14" font-family="Trebuchet MS, Arial, sans-serif">Epoch Budget</text>
-<text x="24" y="369.0" transform="rotate(-90 24 369.0)" text-anchor="middle" fill="#1f1d1a" font-size="14" font-family="Trebuchet MS, Arial, sans-serif">Validation RMSE</text>
+<text x="24" y="377.0" transform="rotate(-90 24 377.0)" text-anchor="middle" fill="#1f1d1a" font-size="14" font-family="Trebuchet MS, Arial, sans-serif">Validation RMSE</text>
 </svg>

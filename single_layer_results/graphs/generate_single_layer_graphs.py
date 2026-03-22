@@ -25,6 +25,8 @@ COLORS = {
     75: "#b02e0c",
     100: "#5f0f40",
     125: "#3a5a40",
+    200: "#6c757d",
+    350: "#7b2cbf",
 }
 
 BG = "#f7f4ea"
@@ -428,10 +430,10 @@ def draw_line_chart(
 
 def draw_loss_grid(path: Path, best_rows: list[dict[str, float]], histories: dict[int, dict[str, list[float]]]) -> None:
     width, height = 1400, 980
-    lines = svg_header(width, height, "Best Single-Layer Loss Curves")
+    lines = svg_header(width, height, "Complete Single-Layer Loss Curves")
     lines.append(
         f'<text x="42" y="46" fill="{TEXT}" font-size="28" font-weight="700" '
-        'font-family="Georgia, serif">Best Single-Layer Loss Curves</text>'
+        'font-family="Georgia, serif">Complete Single-Layer Loss Curves</text>'
     )
 
     panel_w, panel_h = 420, 255
@@ -465,8 +467,10 @@ def draw_loss_grid(path: Path, best_rows: list[dict[str, float]], histories: dic
         plot_right = plot_left + plot_width
         plot_bottom = plot_top + plot_height
         x_domain = (1, len(x_values))
+        selected_epoch = min(max(epochs, 1), len(x_values))
+        selected_idx = selected_epoch - 1
         tick_positions = [1, len(x_values) // 2, len(x_values)]
-        tick_positions = sorted(set(pos for pos in tick_positions if pos >= 1))
+        tick_positions = sorted(set(pos for pos in tick_positions if 1 <= pos <= len(x_values)))
         y_ticks = nice_ticks(y_domain[0], y_domain[1], 5)
 
         for tick in y_ticks:
@@ -478,7 +482,7 @@ def draw_loss_grid(path: Path, best_rows: list[dict[str, float]], histories: dic
             lines.append(
                 f'<text x="{plot_left - 8:.1f}" y="{y + 4:.1f}" text-anchor="end" fill="{SUBTLE}" '
                 'font-size="10" font-family="Trebuchet MS, Arial, sans-serif">'
-                f"{tick:.1f}</text>"
+                f"{fmt_metric(10 ** tick, 5)}</text>"
             )
 
         for tick in tick_positions:
@@ -516,9 +520,8 @@ def draw_loss_grid(path: Path, best_rows: list[dict[str, float]], histories: dic
             'stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />'
         )
 
-        min_idx = min(range(len(val_losses)), key=val_losses.__getitem__)
-        best_x, best_y = val_points[min_idx]
-        label_text = f"min val {fmt_metric(val_losses[min_idx], 5)}"
+        best_x, best_y = val_points[selected_idx]
+        label_text = f"val loss {fmt_metric(val_losses[selected_idx], 5)}"
         label_x = min(best_x + 8, plot_right - 84)
         label_y = max(best_y - 10, plot_top + 12)
         lines.append(
@@ -552,6 +555,10 @@ def draw_best_metrics_panels(path: Path, best_rows: list[dict[str, float]]) -> N
     lines.append(
         f'<text x="42" y="46" fill="{TEXT}" font-size="28" font-weight="700" '
         'font-family="Georgia, serif">Best Model Metrics by Neuron Count</text>'
+    )
+    lines.append(
+        f'<text x="42" y="68" fill="{SUBTLE}" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">'
+        'RMSE and training time: lower is better. R^2: higher is better.</text>'
     )
 
     neuron_x = [int(item["neurons"]) for item in best_rows]
@@ -637,6 +644,10 @@ def draw_validation_vs_test_panels(path: Path, best_rows: list[dict[str, float]]
         f'<text x="42" y="46" fill="{TEXT}" font-size="28" font-weight="700" '
         'font-family="Georgia, serif">Validation vs Test Metrics</text>'
     )
+    lines.append(
+        f'<text x="42" y="68" fill="{SUBTLE}" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">'
+        'RMSE and MAPE: lower is better. R^2: higher is better.</text>'
+    )
 
     neurons = [int(item["neurons"]) for item in best_rows]
     specs = [
@@ -717,9 +728,15 @@ def draw_feature_correlation_heatmap(path: Path, include_categorical: bool = Fal
 
 
 def draw_sorted_predictions(
-    path: Path, actual: list[float], predicted: list[float], rmse: float, r2_value: float
+    path: Path, actual: list[float], predicted: list[float], rmse: float, r2_value: float, neurons: int, epochs: int
 ) -> None:
-    paired = list(zip(actual, predicted))
+    paired = sorted(zip(actual, predicted), key=lambda item: item[0])
+    if len(paired) > 1:
+        low_idx = max(0, int(len(paired) * 0.01))
+        high_idx = max(low_idx + 1, int(len(paired) * 0.99))
+        paired = paired[low_idx:high_idx]
+    low_cutoff = paired[0][0]
+    high_cutoff = paired[-1][0]
     target_points = 260
     step = max(1, len(paired) // target_points)
     sampled = paired[::step]
@@ -731,9 +748,9 @@ def draw_sorted_predictions(
 
     draw_line_chart(
         path=path,
-        title="Overall Best Model: Test Predictions Over Time",
-        subtitle="",
-        x_label="Test Sample Index (Oldest to Newest)",
+        title="Overall Best Model: Sorted Test Predictions",
+        subtitle=f"Best model: {neurons} neurons, {epochs} epochs.",
+        x_label="Sorted Test Sample Index",
         y_label="Sale Price (USD)",
         series=[
             {"label": "Actual price", "x": indices, "y": actual_sample, "color": "#2a9d8f"},
@@ -773,11 +790,22 @@ def main() -> None:
     best_rows = [min(items, key=lambda item: item["test_rmse"]) for _, items in sorted(by_neuron.items())]
 
     histories: dict[int, dict[str, list[float]]] = {}
+    full_run_rows = []
+    full_run_histories: dict[int, dict[str, list[float]]] = {}
     for row in best_rows:
         neurons = int(row["neurons"])
         epochs = int(row["epochs"])
         history_rows = read_csv_rows(ROOT / f"neurons_{neurons}_epochs_{epochs}_history.csv")
         histories[neurons] = {
+            "loss": [float(item["loss"]) for item in history_rows],
+            "val_loss": [float(item["val_loss"]) for item in history_rows],
+        }
+    for neurons in sorted(by_neuron):
+        full_run = max(by_neuron[neurons], key=lambda item: item["epochs"])
+        full_epochs = int(full_run["epochs"])
+        history_rows = read_csv_rows(ROOT / f"neurons_{neurons}_epochs_{full_epochs}_history.csv")
+        full_run_rows.append({"neurons": float(neurons), "epochs": float(full_epochs)})
+        full_run_histories[neurons] = {
             "loss": [float(item["loss"]) for item in history_rows],
             "val_loss": [float(item["val_loss"]) for item in history_rows],
         }
@@ -801,12 +829,12 @@ def main() -> None:
             {"label": f"{neurons} neurons", "x": epochs, "y": [item["val_rmse"] for item in items], "color": COLORS[neurons]}
         )
 
-    draw_loss_grid(OUT_DIR / "best_loss_curves_grid.svg", best_rows, histories)
+    draw_loss_grid(OUT_DIR / "best_loss_curves_grid.svg", full_run_rows, full_run_histories)
 
     draw_line_chart(
         path=OUT_DIR / "test_rmse_vs_epoch_budget.svg",
         title="Test RMSE vs Epoch Budget",
-        subtitle="",
+        subtitle="Lower is better.",
         x_label="Epoch Budget",
         y_label="Test RMSE",
         series=rmse_series,
@@ -822,16 +850,34 @@ def main() -> None:
     draw_line_chart(
         path=OUT_DIR / "test_rmse_vs_epoch_budget_focused.svg",
         title="Test RMSE vs Epoch Budget (Focused View)",
-        subtitle="",
+        subtitle="Lower is better.",
         x_label="Epoch Budget",
         y_label="Test RMSE",
         series=focused_rmse_series,
     )
 
+    zoomed_rmse_series = []
+    for neurons in neuron_values:
+        if neurons == min(neuron_values):
+            continue
+        items = [item for item in sorted(by_neuron[neurons], key=lambda item: item["epochs"]) if item["epochs"] >= 50]
+        zoomed_rmse_series.append(
+            {"label": f"{neurons} neurons", "x": [int(item["epochs"]) for item in items], "y": [item["test_rmse"] for item in items], "color": COLORS[neurons]}
+        )
+
+    draw_line_chart(
+        path=OUT_DIR / "test_rmse_vs_epoch_budget_zoomed.svg",
+        title="Test RMSE vs Epoch Budget (Zoomed Comparison)",
+        subtitle="Lower is better. Excludes the smallest model to show the competitive range more clearly.",
+        x_label="Epoch Budget",
+        y_label="Test RMSE",
+        series=zoomed_rmse_series,
+    )
+
     draw_line_chart(
         path=OUT_DIR / "test_r2_vs_epoch_budget.svg",
         title="Test R^2 vs Epoch Budget",
-        subtitle="",
+        subtitle="Higher is better.",
         x_label="Epoch Budget",
         y_label="Test R^2",
         series=r2_series,
@@ -840,7 +886,7 @@ def main() -> None:
     draw_line_chart(
         path=OUT_DIR / "validation_rmse_vs_epoch_budget.svg",
         title="Validation RMSE vs Epoch Budget",
-        subtitle="",
+        subtitle="Lower is better.",
         x_label="Epoch Budget",
         y_label="Validation RMSE",
         series=val_series,
@@ -851,7 +897,7 @@ def main() -> None:
     draw_line_chart(
         path=OUT_DIR / "testing_loss_vs_epoch_budget.svg",
         title="Testing Loss vs Epoch Budget",
-        subtitle="",
+        subtitle="Lower is better.",
         x_label="Epoch Budget",
         y_label="Test RMSE",
         series=rmse_series,
@@ -879,6 +925,8 @@ def main() -> None:
         predicted=predicted,
         rmse=float(summary["test_rmse"]),
         r2_value=float(summary["test_R2_score"]),
+        neurons=int(float(summary["neurons"])),
+        epochs=int(float(summary["epochs"])),
     )
 
     manifest_lines = [
@@ -886,6 +934,7 @@ def main() -> None:
         "best_loss_curves_grid.svg",
         "test_rmse_vs_epoch_budget.svg",
         "test_rmse_vs_epoch_budget_focused.svg",
+        "test_rmse_vs_epoch_budget_zoomed.svg",
         "test_r2_vs_epoch_budget.svg",
         "validation_rmse_vs_epoch_budget.svg",
         "testing_loss_vs_epoch_budget.svg",

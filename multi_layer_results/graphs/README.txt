@@ -2,6 +2,7 @@ Generated files:
 best_loss_curves_grid.svg
 test_rmse_vs_epoch_budget.svg
 test_rmse_vs_epoch_budget_focused.svg
+test_rmse_vs_epoch_budget_zoomed.svg
 test_r2_vs_epoch_budget.svg
 validation_rmse_vs_epoch_budget.svg
 testing_loss_vs_epoch_budget.svg
