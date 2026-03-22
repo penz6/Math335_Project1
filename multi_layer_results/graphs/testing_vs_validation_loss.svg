@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="720" viewBox="0 0 1180 720" role="img" aria-label="100/75 Model: Test vs Validation RMSE">
+<rect width="1180" height="720" fill="#f7f4ea" />
+<rect x="28.0" y="24.0" width="1124.0" height="672.0" rx="18" fill="#fffdf7" stroke="#e6dec9" />
+<text x="52.0" y="58.0" fill="#1f1d1a" font-size="22" font-weight="700" font-family="Georgia, serif">100/75 Model: Test vs Validation RMSE</text>
+<line x1="98.0" y1="722.1" x2="1122.0" y2="722.1" stroke="#d9d2bf" stroke-width="1" />
+<text x="86.0" y="727.1" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">150k</text>
+<line x1="98.0" y1="603.9" x2="1122.0" y2="603.9" stroke="#d9d2bf" stroke-width="1" />
+<text x="86.0" y="608.9" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">200k</text>
+<line x1="98.0" y1="485.6" x2="1122.0" y2="485.6" stroke="#d9d2bf" stroke-width="1" />
+<text x="86.0" y="490.6" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">250k</text>
+<line x1="98.0" y1="367.4" x2="1122.0" y2="367.4" stroke="#d9d2bf" stroke-width="1" />
+<text x="86.0" y="372.4" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">300k</text>
+<line x1="98.0" y1="249.1" x2="1122.0" y2="249.1" stroke="#d9d2bf" stroke-width="1" />
+<text x="86.0" y="254.1" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">350k</text>
+<line x1="98.0" y1="130.9" x2="1122.0" y2="130.9" stroke="#d9d2bf" stroke-width="1" />
+<text x="86.0" y="135.9" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">400k</text>
+<line x1="98.0" y1="12.6" x2="1122.0" y2="12.6" stroke="#d9d2bf" stroke-width="1" />
+<text x="86.0" y="17.6" text-anchor="end" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">450k</text>
+<line x1="117.7" y1="90.0" x2="117.7" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="117.7" y="670.0" text-anchor="middle" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">10</text>
+<line x1="147.8" y1="90.0" x2="147.8" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="147.8" y="670.0" text-anchor="middle" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">25</text>
+<line x1="198.1" y1="90.0" x2="198.1" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="198.1" y="670.0" text-anchor="middle" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">50</text>
+<line x1="248.3" y1="90.0" x2="248.3" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="248.3" y="670.0" text-anchor="middle" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">75</text>
+<line x1="298.5" y1="90.0" x2="298.5" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="298.5" y="670.0" text-anchor="middle" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">100</text>
+<line x1="348.8" y1="90.0" x2="348.8" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="348.8" y="670.0" text-anchor="middle" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">125</text>
+<line x1="600.0" y1="90.0" x2="600.0" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="600.0" y="670.0" text-anchor="middle" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">250</text>
+<line x1="1102.3" y1="90.0" x2="1102.3" y2="648.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="1102.3" y="670.0" text-anchor="middle" fill="#6f6659" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">500</text>
+<line x1="98.0" y1="648.0" x2="1122.0" y2="648.0" stroke="#544b3d" stroke-width="1.6" />
+<line x1="98.0" y1="90.0" x2="98.0" y2="648.0" stroke="#544b3d" stroke-width="1.6" />
+<path d="M 117.69 437.60 L 147.83 519.53 L 198.07 545.83 L 248.30 576.85 L 298.54 592.57 L 348.78 599.05 L 599.95 598.16 L 1102.31 609.52" fill="none" stroke="#355070" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="117.7" cy="437.6" r="4.4" fill="#355070" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="147.8" cy="519.5" r="4.4" fill="#355070" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="198.1" cy="545.8" r="4.4" fill="#355070" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="248.3" cy="576.9" r="4.4" fill="#355070" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="298.5" cy="592.6" r="4.4" fill="#355070" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="348.8" cy="599.1" r="4.4" fill="#355070" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="600.0" cy="598.2" r="4.4" fill="#355070" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="1102.3" cy="609.5" r="4.4" fill="#355070" stroke="#fffdf7" stroke-width="1.4" />
+<path d="M 117.69 128.48 L 147.83 259.88 L 198.07 323.33 L 248.30 331.46 L 298.54 379.36 L 348.78 400.58 L 599.95 386.40 L 1102.31 411.49" fill="none" stroke="#c1121f" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="117.7" cy="128.5" r="4.4" fill="#c1121f" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="147.8" cy="259.9" r="4.4" fill="#c1121f" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="198.1" cy="323.3" r="4.4" fill="#c1121f" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="248.3" cy="331.5" r="4.4" fill="#c1121f" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="298.5" cy="379.4" r="4.4" fill="#c1121f" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="348.8" cy="400.6" r="4.4" fill="#c1121f" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="600.0" cy="386.4" r="4.4" fill="#c1121f" stroke="#fffdf7" stroke-width="1.4" />
+<circle cx="1102.3" cy="411.5" r="4.4" fill="#c1121f" stroke="#fffdf7" stroke-width="1.4" />
+<line x1="902.0" y1="98.0" x2="926.0" y2="98.0" stroke="#355070" stroke-width="4" stroke-linecap="round" />
+<text x="936.0" y="102.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">Validation RMSE</text>
+<line x1="902.0" y1="122.0" x2="926.0" y2="122.0" stroke="#c1121f" stroke-width="4" stroke-linecap="round" />
+<text x="936.0" y="126.0" fill="#1f1d1a" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">Test RMSE</text>
+<text x="610.0" y="694.0" text-anchor="middle" fill="#1f1d1a" font-size="14" font-family="Trebuchet MS, Arial, sans-serif">Epoch Budget</text>
+<text x="24" y="369.0" transform="rotate(-90 24 369.0)" text-anchor="middle" fill="#1f1d1a" font-size="14" font-family="Trebuchet MS, Arial, sans-serif">RMSE</text>
+</svg>

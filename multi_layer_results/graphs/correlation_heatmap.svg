@@ -1,0 +1,226 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="940" viewBox="0 0 980 940" role="img" aria-label="Correlation Heatmap">
+<rect width="980" height="940" fill="#f7f4ea" />
+<text x="42" y="46" fill="#1f1d1a" font-size="28" font-weight="700" font-family="Georgia, serif">Correlation Heatmap</text>
+<rect x="28.0" y="24.0" width="924.0" height="892.0" rx="18" fill="#fffdf7" stroke="#e6dec9" />
+<text x="52.0" y="58.0" fill="#1f1d1a" font-size="22" font-weight="700" font-family="Georgia, serif">Continuous Feature Correlations</text>
+<text x="223.4" y="104.0" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">Inventory</text>
+<text x="176.0" y="153.4" text-anchor="end" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">Inventory</text>
+<text x="294.2" y="104.0" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">Homes Sold</text>
+<text x="176.0" y="224.2" text-anchor="end" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">Homes Sold</text>
+<text x="365.0" y="104.0" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">Median DOM</text>
+<text x="176.0" y="295.0" text-anchor="end" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">Median DOM</text>
+<text x="435.8" y="104.0" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">Avg Sale/List</text>
+<text x="176.0" y="365.8" text-anchor="end" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">Avg Sale/List</text>
+<text x="506.6" y="104.0" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">Lag 1</text>
+<text x="176.0" y="436.6" text-anchor="end" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">Lag 1</text>
+<text x="577.4" y="104.0" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">Lag 3</text>
+<text x="176.0" y="507.4" text-anchor="end" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">Lag 3</text>
+<text x="648.2" y="104.0" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">Month Sin</text>
+<text x="176.0" y="578.2" text-anchor="end" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">Month Sin</text>
+<text x="719.0" y="104.0" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">Month Cos</text>
+<text x="176.0" y="649.0" text-anchor="end" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">Month Cos</text>
+<text x="789.8" y="104.0" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">Year</text>
+<text x="176.0" y="719.8" text-anchor="end" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">Year</text>
+<text x="860.6" y="104.0" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">Sale Price</text>
+<text x="176.0" y="790.6" text-anchor="end" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">Sale Price</text>
+<rect x="188.0" y="114.0" width="70.8" height="70.8" fill="rgb(160,255,160)" stroke="#f7f4ea" />
+<text x="223.4" y="153.4" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">1.00</text>
+<rect x="258.8" y="114.0" width="70.8" height="70.8" fill="rgb(174,255,174)" stroke="#f7f4ea" />
+<text x="294.2" y="153.4" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.85</text>
+<rect x="329.6" y="114.0" width="70.8" height="70.8" fill="rgb(255,253,253)" stroke="#f7f4ea" />
+<text x="365.0" y="153.4" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.02</text>
+<rect x="400.4" y="114.0" width="70.8" height="70.8" fill="rgb(255,254,254)" stroke="#f7f4ea" />
+<text x="435.8" y="153.4" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.01</text>
+<rect x="471.2" y="114.0" width="70.8" height="70.8" fill="rgb(254,255,254)" stroke="#f7f4ea" />
+<text x="506.6" y="153.4" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.00</text>
+<rect x="542.0" y="114.0" width="70.8" height="70.8" fill="rgb(254,255,254)" stroke="#f7f4ea" />
+<text x="577.4" y="153.4" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.01</text>
+<rect x="612.8" y="114.0" width="70.8" height="70.8" fill="rgb(254,255,254)" stroke="#f7f4ea" />
+<text x="648.2" y="153.4" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.00</text>
+<rect x="683.6" y="114.0" width="70.8" height="70.8" fill="rgb(255,254,254)" stroke="#f7f4ea" />
+<text x="719.0" y="153.4" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.01</text>
+<rect x="754.4" y="114.0" width="70.8" height="70.8" fill="rgb(255,250,250)" stroke="#f7f4ea" />
+<text x="789.8" y="153.4" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.05</text>
+<rect x="825.2" y="114.0" width="70.8" height="70.8" fill="rgb(255,254,254)" stroke="#f7f4ea" />
+<text x="860.6" y="153.4" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.01</text>
+<rect x="188.0" y="184.8" width="70.8" height="70.8" fill="rgb(174,255,174)" stroke="#f7f4ea" />
+<text x="223.4" y="224.2" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.85</text>
+<rect x="258.8" y="184.8" width="70.8" height="70.8" fill="rgb(160,255,160)" stroke="#f7f4ea" />
+<text x="294.2" y="224.2" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">1.00</text>
+<rect x="329.6" y="184.8" width="70.8" height="70.8" fill="rgb(255,250,250)" stroke="#f7f4ea" />
+<text x="365.0" y="224.2" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.05</text>
+<rect x="400.4" y="184.8" width="70.8" height="70.8" fill="rgb(250,255,250)" stroke="#f7f4ea" />
+<text x="435.8" y="224.2" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.05</text>
+<rect x="471.2" y="184.8" width="70.8" height="70.8" fill="rgb(254,255,254)" stroke="#f7f4ea" />
+<text x="506.6" y="224.2" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.00</text>
+<rect x="542.0" y="184.8" width="70.8" height="70.8" fill="rgb(254,255,254)" stroke="#f7f4ea" />
+<text x="577.4" y="224.2" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.00</text>
+<rect x="612.8" y="184.8" width="70.8" height="70.8" fill="rgb(255,254,254)" stroke="#f7f4ea" />
+<text x="648.2" y="224.2" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.01</text>
+<rect x="683.6" y="184.8" width="70.8" height="70.8" fill="rgb(255,252,252)" stroke="#f7f4ea" />
+<text x="719.0" y="224.2" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.03</text>
+<rect x="754.4" y="184.8" width="70.8" height="70.8" fill="rgb(255,254,254)" stroke="#f7f4ea" />
+<text x="789.8" y="224.2" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.00</text>
+<rect x="825.2" y="184.8" width="70.8" height="70.8" fill="rgb(254,255,254)" stroke="#f7f4ea" />
+<text x="860.6" y="224.2" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.01</text>
+<rect x="188.0" y="255.6" width="70.8" height="70.8" fill="rgb(255,253,253)" stroke="#f7f4ea" />
+<text x="223.4" y="295.0" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.02</text>
+<rect x="258.8" y="255.6" width="70.8" height="70.8" fill="rgb(255,250,250)" stroke="#f7f4ea" />
+<text x="294.2" y="295.0" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.05</text>
+<rect x="329.6" y="255.6" width="70.8" height="70.8" fill="rgb(160,255,160)" stroke="#f7f4ea" />
+<text x="365.0" y="295.0" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">1.00</text>
+<rect x="400.4" y="255.6" width="70.8" height="70.8" fill="rgb(255,238,238)" stroke="#f7f4ea" />
+<text x="435.8" y="295.0" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.17</text>
+<rect x="471.2" y="255.6" width="70.8" height="70.8" fill="rgb(255,254,254)" stroke="#f7f4ea" />
+<text x="506.6" y="295.0" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.01</text>
+<rect x="542.0" y="255.6" width="70.8" height="70.8" fill="rgb(255,254,254)" stroke="#f7f4ea" />
+<text x="577.4" y="295.0" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.00</text>
+<rect x="612.8" y="255.6" width="70.8" height="70.8" fill="rgb(251,255,251)" stroke="#f7f4ea" />
+<text x="648.2" y="295.0" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.04</text>
+<rect x="683.6" y="255.6" width="70.8" height="70.8" fill="rgb(252,255,252)" stroke="#f7f4ea" />
+<text x="719.0" y="295.0" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.02</text>
+<rect x="754.4" y="255.6" width="70.8" height="70.8" fill="rgb(255,238,238)" stroke="#f7f4ea" />
+<text x="789.8" y="295.0" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.17</text>
+<rect x="825.2" y="255.6" width="70.8" height="70.8" fill="rgb(255,251,251)" stroke="#f7f4ea" />
+<text x="860.6" y="295.0" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.03</text>
+<rect x="188.0" y="326.4" width="70.8" height="70.8" fill="rgb(255,254,254)" stroke="#f7f4ea" />
+<text x="223.4" y="365.8" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.01</text>
+<rect x="258.8" y="326.4" width="70.8" height="70.8" fill="rgb(250,255,250)" stroke="#f7f4ea" />
+<text x="294.2" y="365.8" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.05</text>
+<rect x="329.6" y="326.4" width="70.8" height="70.8" fill="rgb(255,238,238)" stroke="#f7f4ea" />
+<text x="365.0" y="365.8" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.17</text>
+<rect x="400.4" y="326.4" width="70.8" height="70.8" fill="rgb(160,255,160)" stroke="#f7f4ea" />
+<text x="435.8" y="365.8" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">1.00</text>
+<rect x="471.2" y="326.4" width="70.8" height="70.8" fill="rgb(248,255,248)" stroke="#f7f4ea" />
+<text x="506.6" y="365.8" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.06</text>
+<rect x="542.0" y="326.4" width="70.8" height="70.8" fill="rgb(248,255,248)" stroke="#f7f4ea" />
+<text x="577.4" y="365.8" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.06</text>
+<rect x="612.8" y="326.4" width="70.8" height="70.8" fill="rgb(255,253,253)" stroke="#f7f4ea" />
+<text x="648.2" y="365.8" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.02</text>
+<rect x="683.6" y="326.4" width="70.8" height="70.8" fill="rgb(255,248,248)" stroke="#f7f4ea" />
+<text x="719.0" y="365.8" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.07</text>
+<rect x="754.4" y="326.4" width="70.8" height="70.8" fill="rgb(233,255,233)" stroke="#f7f4ea" />
+<text x="789.8" y="365.8" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.22</text>
+<rect x="825.2" y="326.4" width="70.8" height="70.8" fill="rgb(243,255,243)" stroke="#f7f4ea" />
+<text x="860.6" y="365.8" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.12</text>
+<rect x="188.0" y="397.2" width="70.8" height="70.8" fill="rgb(254,255,254)" stroke="#f7f4ea" />
+<text x="223.4" y="436.6" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.00</text>
+<rect x="258.8" y="397.2" width="70.8" height="70.8" fill="rgb(254,255,254)" stroke="#f7f4ea" />
+<text x="294.2" y="436.6" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.00</text>
+<rect x="329.6" y="397.2" width="70.8" height="70.8" fill="rgb(255,254,254)" stroke="#f7f4ea" />
+<text x="365.0" y="436.6" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.01</text>
+<rect x="400.4" y="397.2" width="70.8" height="70.8" fill="rgb(248,255,248)" stroke="#f7f4ea" />
+<text x="435.8" y="436.6" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.06</text>
+<rect x="471.2" y="397.2" width="70.8" height="70.8" fill="rgb(160,255,160)" stroke="#f7f4ea" />
+<text x="506.6" y="436.6" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">1.00</text>
+<rect x="542.0" y="397.2" width="70.8" height="70.8" fill="rgb(200,255,200)" stroke="#f7f4ea" />
+<text x="577.4" y="436.6" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.57</text>
+<rect x="612.8" y="397.2" width="70.8" height="70.8" fill="rgb(254,255,254)" stroke="#f7f4ea" />
+<text x="648.2" y="436.6" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.00</text>
+<rect x="683.6" y="397.2" width="70.8" height="70.8" fill="rgb(254,255,254)" stroke="#f7f4ea" />
+<text x="719.0" y="436.6" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.00</text>
+<rect x="754.4" y="397.2" width="70.8" height="70.8" fill="rgb(255,254,254)" stroke="#f7f4ea" />
+<text x="789.8" y="436.6" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.01</text>
+<rect x="825.2" y="397.2" width="70.8" height="70.8" fill="rgb(200,255,200)" stroke="#f7f4ea" />
+<text x="860.6" y="436.6" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.57</text>
+<rect x="188.0" y="468.0" width="70.8" height="70.8" fill="rgb(254,255,254)" stroke="#f7f4ea" />
+<text x="223.4" y="507.4" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.01</text>
+<rect x="258.8" y="468.0" width="70.8" height="70.8" fill="rgb(254,255,254)" stroke="#f7f4ea" />
+<text x="294.2" y="507.4" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.00</text>
+<rect x="329.6" y="468.0" width="70.8" height="70.8" fill="rgb(255,254,254)" stroke="#f7f4ea" />
+<text x="365.0" y="507.4" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.00</text>
+<rect x="400.4" y="468.0" width="70.8" height="70.8" fill="rgb(248,255,248)" stroke="#f7f4ea" />
+<text x="435.8" y="507.4" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.06</text>
+<rect x="471.2" y="468.0" width="70.8" height="70.8" fill="rgb(200,255,200)" stroke="#f7f4ea" />
+<text x="506.6" y="507.4" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.57</text>
+<rect x="542.0" y="468.0" width="70.8" height="70.8" fill="rgb(160,255,160)" stroke="#f7f4ea" />
+<text x="577.4" y="507.4" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">1.00</text>
+<rect x="612.8" y="468.0" width="70.8" height="70.8" fill="rgb(255,254,254)" stroke="#f7f4ea" />
+<text x="648.2" y="507.4" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.00</text>
+<rect x="683.6" y="468.0" width="70.8" height="70.8" fill="rgb(255,254,254)" stroke="#f7f4ea" />
+<text x="719.0" y="507.4" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.00</text>
+<rect x="754.4" y="468.0" width="70.8" height="70.8" fill="rgb(255,254,254)" stroke="#f7f4ea" />
+<text x="789.8" y="507.4" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.01</text>
+<rect x="825.2" y="468.0" width="70.8" height="70.8" fill="rgb(202,255,202)" stroke="#f7f4ea" />
+<text x="860.6" y="507.4" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.55</text>
+<rect x="188.0" y="538.8" width="70.8" height="70.8" fill="rgb(254,255,254)" stroke="#f7f4ea" />
+<text x="223.4" y="578.2" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.00</text>
+<rect x="258.8" y="538.8" width="70.8" height="70.8" fill="rgb(255,254,254)" stroke="#f7f4ea" />
+<text x="294.2" y="578.2" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.01</text>
+<rect x="329.6" y="538.8" width="70.8" height="70.8" fill="rgb(251,255,251)" stroke="#f7f4ea" />
+<text x="365.0" y="578.2" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.04</text>
+<rect x="400.4" y="538.8" width="70.8" height="70.8" fill="rgb(255,253,253)" stroke="#f7f4ea" />
+<text x="435.8" y="578.2" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.02</text>
+<rect x="471.2" y="538.8" width="70.8" height="70.8" fill="rgb(254,255,254)" stroke="#f7f4ea" />
+<text x="506.6" y="578.2" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.00</text>
+<rect x="542.0" y="538.8" width="70.8" height="70.8" fill="rgb(255,254,254)" stroke="#f7f4ea" />
+<text x="577.4" y="578.2" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.00</text>
+<rect x="612.8" y="538.8" width="70.8" height="70.8" fill="rgb(160,255,160)" stroke="#f7f4ea" />
+<text x="648.2" y="578.2" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">1.00</text>
+<rect x="683.6" y="538.8" width="70.8" height="70.8" fill="rgb(255,254,254)" stroke="#f7f4ea" />
+<text x="719.0" y="578.2" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.00</text>
+<rect x="754.4" y="538.8" width="70.8" height="70.8" fill="rgb(254,255,254)" stroke="#f7f4ea" />
+<text x="789.8" y="578.2" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.01</text>
+<rect x="825.2" y="538.8" width="70.8" height="70.8" fill="rgb(255,254,254)" stroke="#f7f4ea" />
+<text x="860.6" y="578.2" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.01</text>
+<rect x="188.0" y="609.6" width="70.8" height="70.8" fill="rgb(255,254,254)" stroke="#f7f4ea" />
+<text x="223.4" y="649.0" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.01</text>
+<rect x="258.8" y="609.6" width="70.8" height="70.8" fill="rgb(255,252,252)" stroke="#f7f4ea" />
+<text x="294.2" y="649.0" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.03</text>
+<rect x="329.6" y="609.6" width="70.8" height="70.8" fill="rgb(252,255,252)" stroke="#f7f4ea" />
+<text x="365.0" y="649.0" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.02</text>
+<rect x="400.4" y="609.6" width="70.8" height="70.8" fill="rgb(255,248,248)" stroke="#f7f4ea" />
+<text x="435.8" y="649.0" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.07</text>
+<rect x="471.2" y="609.6" width="70.8" height="70.8" fill="rgb(254,255,254)" stroke="#f7f4ea" />
+<text x="506.6" y="649.0" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.00</text>
+<rect x="542.0" y="609.6" width="70.8" height="70.8" fill="rgb(255,254,254)" stroke="#f7f4ea" />
+<text x="577.4" y="649.0" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.00</text>
+<rect x="612.8" y="609.6" width="70.8" height="70.8" fill="rgb(255,254,254)" stroke="#f7f4ea" />
+<text x="648.2" y="649.0" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.00</text>
+<rect x="683.6" y="609.6" width="70.8" height="70.8" fill="rgb(160,255,160)" stroke="#f7f4ea" />
+<text x="719.0" y="649.0" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">1.00</text>
+<rect x="754.4" y="609.6" width="70.8" height="70.8" fill="rgb(253,255,253)" stroke="#f7f4ea" />
+<text x="789.8" y="649.0" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.02</text>
+<rect x="825.2" y="609.6" width="70.8" height="70.8" fill="rgb(255,254,254)" stroke="#f7f4ea" />
+<text x="860.6" y="649.0" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.01</text>
+<rect x="188.0" y="680.4" width="70.8" height="70.8" fill="rgb(255,250,250)" stroke="#f7f4ea" />
+<text x="223.4" y="719.8" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.05</text>
+<rect x="258.8" y="680.4" width="70.8" height="70.8" fill="rgb(255,254,254)" stroke="#f7f4ea" />
+<text x="294.2" y="719.8" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.00</text>
+<rect x="329.6" y="680.4" width="70.8" height="70.8" fill="rgb(255,238,238)" stroke="#f7f4ea" />
+<text x="365.0" y="719.8" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.17</text>
+<rect x="400.4" y="680.4" width="70.8" height="70.8" fill="rgb(233,255,233)" stroke="#f7f4ea" />
+<text x="435.8" y="719.8" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.22</text>
+<rect x="471.2" y="680.4" width="70.8" height="70.8" fill="rgb(255,254,254)" stroke="#f7f4ea" />
+<text x="506.6" y="719.8" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.01</text>
+<rect x="542.0" y="680.4" width="70.8" height="70.8" fill="rgb(255,254,254)" stroke="#f7f4ea" />
+<text x="577.4" y="719.8" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.01</text>
+<rect x="612.8" y="680.4" width="70.8" height="70.8" fill="rgb(254,255,254)" stroke="#f7f4ea" />
+<text x="648.2" y="719.8" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.01</text>
+<rect x="683.6" y="680.4" width="70.8" height="70.8" fill="rgb(253,255,253)" stroke="#f7f4ea" />
+<text x="719.0" y="719.8" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.02</text>
+<rect x="754.4" y="680.4" width="70.8" height="70.8" fill="rgb(160,255,160)" stroke="#f7f4ea" />
+<text x="789.8" y="719.8" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">1.00</text>
+<rect x="825.2" y="680.4" width="70.8" height="70.8" fill="rgb(235,255,235)" stroke="#f7f4ea" />
+<text x="860.6" y="719.8" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.21</text>
+<rect x="188.0" y="751.2" width="70.8" height="70.8" fill="rgb(255,254,254)" stroke="#f7f4ea" />
+<text x="223.4" y="790.6" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.01</text>
+<rect x="258.8" y="751.2" width="70.8" height="70.8" fill="rgb(254,255,254)" stroke="#f7f4ea" />
+<text x="294.2" y="790.6" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.01</text>
+<rect x="329.6" y="751.2" width="70.8" height="70.8" fill="rgb(255,251,251)" stroke="#f7f4ea" />
+<text x="365.0" y="790.6" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.03</text>
+<rect x="400.4" y="751.2" width="70.8" height="70.8" fill="rgb(243,255,243)" stroke="#f7f4ea" />
+<text x="435.8" y="790.6" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.12</text>
+<rect x="471.2" y="751.2" width="70.8" height="70.8" fill="rgb(200,255,200)" stroke="#f7f4ea" />
+<text x="506.6" y="790.6" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.57</text>
+<rect x="542.0" y="751.2" width="70.8" height="70.8" fill="rgb(202,255,202)" stroke="#f7f4ea" />
+<text x="577.4" y="790.6" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.55</text>
+<rect x="612.8" y="751.2" width="70.8" height="70.8" fill="rgb(255,254,254)" stroke="#f7f4ea" />
+<text x="648.2" y="790.6" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.01</text>
+<rect x="683.6" y="751.2" width="70.8" height="70.8" fill="rgb(255,254,254)" stroke="#f7f4ea" />
+<text x="719.0" y="790.6" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">-0.01</text>
+<rect x="754.4" y="751.2" width="70.8" height="70.8" fill="rgb(235,255,235)" stroke="#f7f4ea" />
+<text x="789.8" y="790.6" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.21</text>
+<rect x="825.2" y="751.2" width="70.8" height="70.8" fill="rgb(160,255,160)" stroke="#f7f4ea" />
+<text x="860.6" y="790.6" text-anchor="middle" fill="#1f1d1a" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">1.00</text>
+</svg>
