@@ -12,6 +12,7 @@ best_model_tradeoffs_by_configuration.svg
 correlation_heatmap.svg
 correlation_heatmap_full_inputs.svg
 overall_best_test_predictions_sorted.svg
+overall_best_true_vs_prediction_test.svg
 
 Notes:
 - SVG format was used for slide-friendly scaling.

@@ -165,6 +165,19 @@ def pearson_correlation(xs: list[float], ys: list[float]) -> float:
     return num / (den_x * den_y)
 
 
+def linear_fit(xs: list[float], ys: list[float]) -> tuple[float, float]:
+    if len(xs) != len(ys) or not xs:
+        return 1.0, 0.0
+    mean_x = sum(xs) / len(xs)
+    mean_y = sum(ys) / len(ys)
+    denom = sum((x - mean_x) ** 2 for x in xs)
+    if denom == 0:
+        return 1.0, 0.0
+    slope = sum((x - mean_x) * (y - mean_y) for x, y in zip(xs, ys)) / denom
+    intercept = mean_y - slope * mean_x
+    return slope, intercept
+
+
 def compute_feature_correlation_matrix(include_categorical: bool = False) -> tuple[list[str], list[list[float]]]:
     source = Path("/home/penn/Downloads/city_market_tracker.tsv000")
     sample_every = 25
@@ -762,6 +775,141 @@ def draw_sorted_predictions(
     )
 
 
+def draw_true_vs_prediction_scatter(
+    path: Path,
+    actual: list[float],
+    predicted: list[float],
+    rmse: float,
+    r2_value: float,
+    neurons: int,
+    epochs: int,
+) -> None:
+    pairs = list(zip(actual, predicted))
+    if not pairs:
+        return
+    pairs.sort(key=lambda item: item[0])
+    if len(pairs) > 1:
+        low_idx = max(0, int(len(pairs) * 0.01))
+        high_idx = max(low_idx + 1, int(len(pairs) * 0.99))
+        pairs = pairs[low_idx:high_idx]
+    max_points = 4000
+    step = max(1, len(pairs) // max_points)
+    sampled = pairs[::step]
+    if sampled[-1] != pairs[-1]:
+        sampled.append(pairs[-1])
+
+    sample_actual = [pair[0] for pair in sampled]
+    sample_pred = [pair[1] for pair in sampled]
+    lo = min(min(sample_actual), min(sample_pred))
+    hi = max(max(sample_actual), max(sample_pred))
+    domain = padded_domain([lo, hi], 0.06)
+    slope, intercept = linear_fit(sample_actual, sample_pred)
+
+    width, height = 1180, 820
+    title = "Overall Best Model: True vs Predicted Test Prices"
+    subtitle = f"Best model: {neurons} neurons, {epochs} epochs. Lower spread around the diagonal is better."
+    lines = svg_header(width, height, title)
+    plot_left, plot_top, plot_width, plot_height = draw_chart_frame(
+        lines, 28, 24, width - 56, height - 48, title, subtitle
+    )
+    plot_right = plot_left + plot_width
+    plot_bottom = plot_top + plot_height
+    ticks = nice_ticks(domain[0], domain[1], 6)
+
+    for tick in ticks:
+        x = scale_linear(tick, domain, (plot_left, plot_right))
+        y = scale_linear(tick, domain, (plot_bottom, plot_top))
+        lines.append(
+            f'<line x1="{plot_left:.1f}" y1="{y:.1f}" x2="{plot_right:.1f}" y2="{y:.1f}" '
+            f'stroke="{GRID}" stroke-width="1" />'
+        )
+        lines.append(
+            f'<line x1="{x:.1f}" y1="{plot_top:.1f}" x2="{x:.1f}" y2="{plot_bottom:.1f}" '
+            f'stroke="{GRID}" stroke-width="1" />'
+        )
+        tick_label = fmt_currency_short(tick)
+        lines.append(
+            f'<text x="{plot_left - 12:.1f}" y="{y + 5:.1f}" text-anchor="end" fill="{SUBTLE}" '
+            'font-size="12" font-family="Trebuchet MS, Arial, sans-serif">'
+            f"{escape(tick_label)}</text>"
+        )
+        lines.append(
+            f'<text x="{x:.1f}" y="{plot_bottom + 22:.1f}" text-anchor="middle" fill="{SUBTLE}" '
+            'font-size="12" font-family="Trebuchet MS, Arial, sans-serif">'
+            f"{escape(tick_label)}</text>"
+        )
+
+    lines.append(
+        f'<line x1="{plot_left:.1f}" y1="{plot_bottom:.1f}" x2="{plot_right:.1f}" y2="{plot_top:.1f}" '
+        'stroke="#355070" stroke-width="2.4" stroke-dasharray="8 6" opacity="0.95" />'
+    )
+    fit_y0 = slope * domain[0] + intercept
+    fit_y1 = slope * domain[1] + intercept
+    fit_points = [
+        (scale_linear(domain[0], domain, (plot_left, plot_right)), scale_linear(fit_y0, domain, (plot_bottom, plot_top))),
+        (scale_linear(domain[1], domain, (plot_left, plot_right)), scale_linear(fit_y1, domain, (plot_bottom, plot_top))),
+    ]
+    lines.append(
+        f'<path d="{build_path(fit_points)}" fill="none" stroke="{VAL}" '
+        'stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />'
+    )
+
+    for x_val, y_val in sampled:
+        x = scale_linear(x_val, domain, (plot_left, plot_right))
+        y = scale_linear(y_val, domain, (plot_bottom, plot_top))
+        lines.append(
+            f'<circle cx="{x:.1f}" cy="{y:.1f}" r="2.5" fill="#2a9d8f" fill-opacity="0.34" stroke="none" />'
+        )
+
+    legend_x = plot_right - 245
+    legend_y = plot_top + 16
+    lines.append(
+        f'<circle cx="{legend_x:.1f}" cy="{legend_y:.1f}" r="4.5" fill="#2a9d8f" fill-opacity="0.65" stroke="none" />'
+    )
+    lines.append(
+        f'<text x="{legend_x + 14:.1f}" y="{legend_y + 4:.1f}" fill="{TEXT}" '
+        'font-size="12" font-family="Trebuchet MS, Arial, sans-serif">Test samples</text>'
+    )
+    lines.append(
+        f'<line x1="{legend_x - 4:.1f}" y1="{legend_y + 24:.1f}" x2="{legend_x + 20:.1f}" y2="{legend_y + 24:.1f}" '
+        'stroke="#355070" stroke-width="2.4" stroke-dasharray="8 6" />'
+    )
+    lines.append(
+        f'<text x="{legend_x + 28:.1f}" y="{legend_y + 28:.1f}" fill="{TEXT}" '
+        'font-size="12" font-family="Trebuchet MS, Arial, sans-serif">Perfect prediction</text>'
+    )
+    lines.append(
+        f'<line x1="{legend_x - 4:.1f}" y1="{legend_y + 48:.1f}" x2="{legend_x + 20:.1f}" y2="{legend_y + 48:.1f}" '
+        f'stroke="{VAL}" stroke-width="2.8" />'
+    )
+    lines.append(
+        f'<text x="{legend_x + 28:.1f}" y="{legend_y + 52:.1f}" fill="{TEXT}" '
+        'font-size="12" font-family="Trebuchet MS, Arial, sans-serif">Model trend</text>'
+    )
+
+    metrics_text = f"Test RMSE: {fmt_short(rmse)}   Test R^2: {fmt_metric(r2_value, 3)}"
+    lines.append(
+        f'<text x="{plot_left:.1f}" y="{plot_top + 18:.1f}" fill="{SUBTLE}" '
+        'font-size="12" font-family="Trebuchet MS, Arial, sans-serif">'
+        f"{escape(metrics_text)}</text>"
+    )
+    lines.append(
+        f'<text x="{(plot_left + plot_right)/2:.1f}" y="{height - 26:.1f}" text-anchor="middle" fill="{TEXT}" '
+        'font-size="14" font-family="Trebuchet MS, Arial, sans-serif">True Sale Price (USD)</text>'
+    )
+    lines.append(
+        f'<text x="24" y="{(plot_top + plot_bottom)/2:.1f}" transform="rotate(-90 24 {(plot_top + plot_bottom)/2:.1f})" '
+        f'text-anchor="middle" fill="{TEXT}" font-size="14" '
+        'font-family="Trebuchet MS, Arial, sans-serif">Predicted Sale Price (USD)</text>'
+    )
+    lines.append(
+        f'<text x="{(plot_left + plot_right)/2:.1f}" y="{height - 8:.1f}" text-anchor="middle" fill="{SUBTLE}" '
+        'font-size="12" font-family="Trebuchet MS, Arial, sans-serif">'
+        'Test data shown: 2022-02-01 to 2026-01-01</text>'
+    )
+    save_svg(path, lines)
+
+
 def draw_test_vs_validation_by_epoch(path: Path, rows_for_neuron: list[dict[str, float]], neuron_count: int) -> None:
     items = sorted(rows_for_neuron, key=lambda item: item["epochs"])
     epochs = [int(item["epochs"]) for item in items]
@@ -928,6 +1076,15 @@ def main() -> None:
         neurons=int(float(summary["neurons"])),
         epochs=int(float(summary["epochs"])),
     )
+    draw_true_vs_prediction_scatter(
+        OUT_DIR / "overall_best_true_vs_prediction_test.svg",
+        actual=actual,
+        predicted=predicted,
+        rmse=float(summary["test_rmse"]),
+        r2_value=float(summary["test_R2_score"]),
+        neurons=int(float(summary["neurons"])),
+        epochs=int(float(summary["epochs"])),
+    )
 
     manifest_lines = [
         "Generated files:",
@@ -944,6 +1101,7 @@ def main() -> None:
         "correlation_heatmap.svg",
         "correlation_heatmap_full_inputs.svg",
         "overall_best_test_predictions_sorted.svg",
+        "overall_best_true_vs_prediction_test.svg",
         "",
         "Notes:",
         "- SVG format was used for slide-friendly scaling.",
