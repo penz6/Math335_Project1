@@ -1,164 +1,164 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="980" height="940" viewBox="0 0 980 940" role="img" aria-label="Validation vs Test Metrics">
-<rect width="980" height="940" fill="#f7f4ea" />
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="720" viewBox="0 0 1180 720" role="img" aria-label="Validation vs Test Metrics">
+<rect width="1180" height="720" fill="#f7f4ea" />
 <text x="42" y="46" fill="#1f1d1a" font-size="28" font-weight="700" font-family="Georgia, serif">Validation vs Test Metrics</text>
 <text x="42" y="68" fill="#6f6659" font-size="13" font-family="Trebuchet MS, Arial, sans-serif">RMSE and MAPE: lower is better. R^2: higher is better.</text>
-<rect x="42.0" y="76.0" width="896.0" height="255.0" rx="18" fill="#fffdf7" stroke="#e6dec9" />
+<rect x="42.0" y="76.0" width="1096.0" height="180.0" rx="18" fill="#fffdf7" stroke="#e6dec9" />
 <text x="66.0" y="110.0" fill="#1f1d1a" font-size="22" font-weight="700" font-family="Georgia, serif">RMSE</text>
-<line x1="112.0" y1="296.2" x2="908.0" y2="296.2" stroke="#d9d2bf" stroke-width="1" />
-<text x="102.0" y="300.2" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">180k</text>
-<line x1="112.0" y1="270.2" x2="908.0" y2="270.2" stroke="#d9d2bf" stroke-width="1" />
-<text x="102.0" y="274.2" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">200k</text>
-<line x1="112.0" y1="244.2" x2="908.0" y2="244.2" stroke="#d9d2bf" stroke-width="1" />
-<text x="102.0" y="248.2" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">220k</text>
-<line x1="112.0" y1="218.2" x2="908.0" y2="218.2" stroke="#d9d2bf" stroke-width="1" />
-<text x="102.0" y="222.2" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">240k</text>
-<line x1="112.0" y1="192.1" x2="908.0" y2="192.1" stroke="#d9d2bf" stroke-width="1" />
-<text x="102.0" y="196.1" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">260k</text>
-<line x1="112.0" y1="166.1" x2="908.0" y2="166.1" stroke="#d9d2bf" stroke-width="1" />
-<text x="102.0" y="170.1" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">280k</text>
-<line x1="112.0" y1="140.1" x2="908.0" y2="140.1" stroke="#d9d2bf" stroke-width="1" />
-<text x="102.0" y="144.1" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">300k</text>
-<line x1="141.5" y1="142.0" x2="141.5" y2="283.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="141.5" y="301.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">10/5</text>
-<line x1="246.8" y1="142.0" x2="246.8" y2="283.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="246.8" y="301.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">25/10</text>
-<line x1="352.1" y1="142.0" x2="352.1" y2="283.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="352.1" y="301.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">50/25</text>
-<line x1="457.4" y1="142.0" x2="457.4" y2="283.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="457.4" y="301.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">75/50</text>
-<line x1="562.6" y1="142.0" x2="562.6" y2="283.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="562.6" y="301.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">100/75</text>
-<line x1="667.9" y1="142.0" x2="667.9" y2="283.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="667.9" y="301.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">125/100</text>
-<line x1="773.2" y1="142.0" x2="773.2" y2="283.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="773.2" y="301.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">200/125</text>
-<line x1="878.5" y1="142.0" x2="878.5" y2="283.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="878.5" y="301.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">350/200</text>
-<path d="M 141.48 240.71 L 246.77 268.99 L 352.06 269.51 L 457.35 269.59 L 562.65 273.28 L 667.94 272.88 L 773.23 264.09 L 878.52 271.29" fill="none" stroke="#355070" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
-<circle cx="141.5" cy="240.7" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="246.8" cy="269.0" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="352.1" cy="269.5" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="457.4" cy="269.6" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="562.6" cy="273.3" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="667.9" cy="272.9" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="773.2" cy="264.1" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="878.5" cy="271.3" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
-<path d="M 141.48 151.72 L 246.77 171.07 L 352.06 165.80 L 457.35 159.63 L 562.65 164.38 L 667.94 167.95 L 773.23 159.67 L 878.52 158.98" fill="none" stroke="#c1121f" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
-<circle cx="141.5" cy="151.7" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="246.8" cy="171.1" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="352.1" cy="165.8" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="457.4" cy="159.6" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="562.6" cy="164.4" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="667.9" cy="168.0" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="773.2" cy="159.7" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="878.5" cy="159.0" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
-<line x1="728.0" y1="154.0" x2="752.0" y2="154.0" stroke="#355070" stroke-width="4" stroke-linecap="round" />
-<text x="762.0" y="158.0" fill="#1f1d1a" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">Validation</text>
-<line x1="728.0" y1="176.0" x2="752.0" y2="176.0" stroke="#c1121f" stroke-width="4" stroke-linecap="round" />
-<text x="762.0" y="180.0" fill="#1f1d1a" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">Test</text>
-<text x="510.0" y="321.0" text-anchor="middle" fill="#1f1d1a" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">Layer 1 / Layer 2 Neurons</text>
-<rect x="42.0" y="357.0" width="896.0" height="255.0" rx="18" fill="#fffdf7" stroke="#e6dec9" />
-<text x="66.0" y="391.0" fill="#1f1d1a" font-size="22" font-weight="700" font-family="Georgia, serif">MAPE</text>
-<line x1="112.0" y1="573.5" x2="908.0" y2="573.5" stroke="#d9d2bf" stroke-width="1" />
-<text x="102.0" y="577.5" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.15</text>
-<line x1="112.0" y1="527.1" x2="908.0" y2="527.1" stroke="#d9d2bf" stroke-width="1" />
-<text x="102.0" y="531.1" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.2</text>
-<line x1="112.0" y1="480.7" x2="908.0" y2="480.7" stroke="#d9d2bf" stroke-width="1" />
-<text x="102.0" y="484.7" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.25</text>
-<line x1="112.0" y1="434.4" x2="908.0" y2="434.4" stroke="#d9d2bf" stroke-width="1" />
-<text x="102.0" y="438.4" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.3</text>
-<line x1="112.0" y1="388.0" x2="908.0" y2="388.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="102.0" y="392.0" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.35</text>
-<line x1="141.5" y1="423.0" x2="141.5" y2="564.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="141.5" y="582.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">10/5</text>
-<line x1="246.8" y1="423.0" x2="246.8" y2="564.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="246.8" y="582.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">25/10</text>
-<line x1="352.1" y1="423.0" x2="352.1" y2="564.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="352.1" y="582.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">50/25</text>
-<line x1="457.4" y1="423.0" x2="457.4" y2="564.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="457.4" y="582.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">75/50</text>
-<line x1="562.6" y1="423.0" x2="562.6" y2="564.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="562.6" y="582.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">100/75</text>
-<line x1="667.9" y1="423.0" x2="667.9" y2="564.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="667.9" y="582.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">125/100</text>
-<line x1="773.2" y1="423.0" x2="773.2" y2="564.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="773.2" y="582.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">200/125</text>
-<line x1="878.5" y1="423.0" x2="878.5" y2="564.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="878.5" y="582.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">350/200</text>
-<path d="M 141.48 531.70 L 246.77 554.28 L 352.06 506.50 L 457.35 542.01 L 562.65 512.85 L 667.94 546.77 L 773.23 523.23 L 878.52 534.68" fill="none" stroke="#355070" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
-<circle cx="141.5" cy="531.7" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="246.8" cy="554.3" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="352.1" cy="506.5" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="457.4" cy="542.0" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="562.6" cy="512.9" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="667.9" cy="546.8" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="773.2" cy="523.2" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="878.5" cy="534.7" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
-<path d="M 141.48 515.85 L 246.77 528.15 L 352.06 468.64 L 457.35 459.26 L 562.65 432.72 L 667.94 487.95 L 773.23 446.15 L 878.52 437.75" fill="none" stroke="#c1121f" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
-<circle cx="141.5" cy="515.9" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="246.8" cy="528.1" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="352.1" cy="468.6" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="457.4" cy="459.3" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="562.6" cy="432.7" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="667.9" cy="488.0" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="773.2" cy="446.2" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="878.5" cy="437.8" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
-<line x1="728.0" y1="435.0" x2="752.0" y2="435.0" stroke="#355070" stroke-width="4" stroke-linecap="round" />
-<text x="762.0" y="439.0" fill="#1f1d1a" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">Validation</text>
-<line x1="728.0" y1="457.0" x2="752.0" y2="457.0" stroke="#c1121f" stroke-width="4" stroke-linecap="round" />
-<text x="762.0" y="461.0" fill="#1f1d1a" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">Test</text>
-<text x="510.0" y="602.0" text-anchor="middle" fill="#1f1d1a" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">Layer 1 / Layer 2 Neurons</text>
-<rect x="42.0" y="638.0" width="896.0" height="255.0" rx="18" fill="#fffdf7" stroke="#e6dec9" />
-<text x="66.0" y="672.0" fill="#1f1d1a" font-size="22" font-weight="700" font-family="Georgia, serif">R^2</text>
-<line x1="112.0" y1="884.7" x2="908.0" y2="884.7" stroke="#d9d2bf" stroke-width="1" />
-<text x="102.0" y="888.7" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.6</text>
-<line x1="112.0" y1="843.1" x2="908.0" y2="843.1" stroke="#d9d2bf" stroke-width="1" />
-<text x="102.0" y="847.1" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.65</text>
-<line x1="112.0" y1="801.5" x2="908.0" y2="801.5" stroke="#d9d2bf" stroke-width="1" />
-<text x="102.0" y="805.5" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.7</text>
-<line x1="112.0" y1="760.0" x2="908.0" y2="760.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="102.0" y="764.0" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.75</text>
-<line x1="112.0" y1="718.4" x2="908.0" y2="718.4" stroke="#d9d2bf" stroke-width="1" />
-<text x="102.0" y="722.4" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.8</text>
-<line x1="112.0" y1="676.8" x2="908.0" y2="676.8" stroke="#d9d2bf" stroke-width="1" />
-<text x="102.0" y="680.8" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.85</text>
-<line x1="141.5" y1="704.0" x2="141.5" y2="845.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="141.5" y="863.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">10/5</text>
-<line x1="246.8" y1="704.0" x2="246.8" y2="845.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="246.8" y="863.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">25/10</text>
-<line x1="352.1" y1="704.0" x2="352.1" y2="845.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="352.1" y="863.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">50/25</text>
-<line x1="457.4" y1="704.0" x2="457.4" y2="845.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="457.4" y="863.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">75/50</text>
-<line x1="562.6" y1="704.0" x2="562.6" y2="845.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="562.6" y="863.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">100/75</text>
-<line x1="667.9" y1="704.0" x2="667.9" y2="845.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="667.9" y="863.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">125/100</text>
-<line x1="773.2" y1="704.0" x2="773.2" y2="845.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="773.2" y="863.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">200/125</text>
-<line x1="878.5" y1="704.0" x2="878.5" y2="845.0" stroke="#d9d2bf" stroke-width="1" />
-<text x="878.5" y="863.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">350/200</text>
-<path d="M 141.48 757.30 L 246.77 719.16 L 352.06 718.50 L 457.35 718.40 L 562.65 713.72 L 667.94 714.22 L 773.23 725.49 L 878.52 716.23" fill="none" stroke="#355070" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
-<circle cx="141.5" cy="757.3" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="246.8" cy="719.2" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="352.1" cy="718.5" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="457.4" cy="718.4" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="562.6" cy="713.7" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="667.9" cy="714.2" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="773.2" cy="725.5" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="878.5" cy="716.2" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
-<path d="M 141.48 835.28 L 246.77 807.06 L 352.06 814.61 L 457.35 823.56 L 562.65 816.66 L 667.94 811.51 L 773.23 823.51 L 878.52 824.52" fill="none" stroke="#c1121f" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
-<circle cx="141.5" cy="835.3" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="246.8" cy="807.1" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="352.1" cy="814.6" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="457.4" cy="823.6" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="562.6" cy="816.7" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="667.9" cy="811.5" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="773.2" cy="823.5" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
-<circle cx="878.5" cy="824.5" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
-<line x1="728.0" y1="716.0" x2="752.0" y2="716.0" stroke="#355070" stroke-width="4" stroke-linecap="round" />
-<text x="762.0" y="720.0" fill="#1f1d1a" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">Validation</text>
-<line x1="728.0" y1="738.0" x2="752.0" y2="738.0" stroke="#c1121f" stroke-width="4" stroke-linecap="round" />
-<text x="762.0" y="742.0" fill="#1f1d1a" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">Test</text>
-<text x="510.0" y="883.0" text-anchor="middle" fill="#1f1d1a" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">Layer 1 / Layer 2 Neurons</text>
+<line x1="112.0" y1="214.2" x2="1108.0" y2="214.2" stroke="#d9d2bf" stroke-width="1" />
+<text x="102.0" y="218.2" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">180k</text>
+<line x1="112.0" y1="202.0" x2="1108.0" y2="202.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="102.0" y="206.0" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">200k</text>
+<line x1="112.0" y1="189.8" x2="1108.0" y2="189.8" stroke="#d9d2bf" stroke-width="1" />
+<text x="102.0" y="193.8" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">220k</text>
+<line x1="112.0" y1="177.6" x2="1108.0" y2="177.6" stroke="#d9d2bf" stroke-width="1" />
+<text x="102.0" y="181.6" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">240k</text>
+<line x1="112.0" y1="165.5" x2="1108.0" y2="165.5" stroke="#d9d2bf" stroke-width="1" />
+<text x="102.0" y="169.5" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">260k</text>
+<line x1="112.0" y1="153.3" x2="1108.0" y2="153.3" stroke="#d9d2bf" stroke-width="1" />
+<text x="102.0" y="157.3" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">280k</text>
+<line x1="112.0" y1="141.1" x2="1108.0" y2="141.1" stroke="#d9d2bf" stroke-width="1" />
+<text x="102.0" y="145.1" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">300k</text>
+<line x1="148.9" y1="142.0" x2="148.9" y2="208.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="148.9" y="226.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">10/5</text>
+<line x1="280.6" y1="142.0" x2="280.6" y2="208.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="280.6" y="226.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">25/10</text>
+<line x1="412.4" y1="142.0" x2="412.4" y2="208.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="412.4" y="226.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">50/25</text>
+<line x1="544.1" y1="142.0" x2="544.1" y2="208.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="544.1" y="226.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">75/50</text>
+<line x1="675.9" y1="142.0" x2="675.9" y2="208.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="675.9" y="226.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">100/75</text>
+<line x1="807.6" y1="142.0" x2="807.6" y2="208.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="807.6" y="226.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">125/100</text>
+<line x1="939.4" y1="142.0" x2="939.4" y2="208.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="939.4" y="226.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">200/125</text>
+<line x1="1071.1" y1="142.0" x2="1071.1" y2="208.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="1071.1" y="226.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">350/200</text>
+<path d="M 148.89 188.20 L 280.63 201.44 L 412.38 201.68 L 544.13 201.72 L 675.87 203.45 L 807.62 203.27 L 939.37 199.15 L 1071.11 202.52" fill="none" stroke="#355070" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="148.9" cy="188.2" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="280.6" cy="201.4" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="412.4" cy="201.7" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="544.1" cy="201.7" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="675.9" cy="203.4" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="807.6" cy="203.3" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="939.4" cy="199.1" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="1071.1" cy="202.5" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
+<path d="M 148.89 146.55 L 280.63 155.61 L 412.38 153.14 L 544.13 150.25 L 675.87 152.48 L 807.62 154.15 L 939.37 150.27 L 1071.11 149.95" fill="none" stroke="#c1121f" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="148.9" cy="146.6" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="280.6" cy="155.6" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="412.4" cy="153.1" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="544.1" cy="150.3" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="675.9" cy="152.5" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="807.6" cy="154.1" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="939.4" cy="150.3" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="1071.1" cy="149.9" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
+<line x1="928.0" y1="154.0" x2="952.0" y2="154.0" stroke="#355070" stroke-width="4" stroke-linecap="round" />
+<text x="962.0" y="158.0" fill="#1f1d1a" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">Validation</text>
+<line x1="928.0" y1="176.0" x2="952.0" y2="176.0" stroke="#c1121f" stroke-width="4" stroke-linecap="round" />
+<text x="962.0" y="180.0" fill="#1f1d1a" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">Test</text>
+<text x="610.0" y="246.0" text-anchor="middle" fill="#1f1d1a" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">Layer 1 / Layer 2 Neurons</text>
+<rect x="42.0" y="274.0" width="1096.0" height="180.0" rx="18" fill="#fffdf7" stroke="#e6dec9" />
+<text x="66.0" y="308.0" fill="#1f1d1a" font-size="22" font-weight="700" font-family="Georgia, serif">MAPE</text>
+<line x1="112.0" y1="410.4" x2="1108.0" y2="410.4" stroke="#d9d2bf" stroke-width="1" />
+<text x="102.0" y="414.4" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.15</text>
+<line x1="112.0" y1="388.7" x2="1108.0" y2="388.7" stroke="#d9d2bf" stroke-width="1" />
+<text x="102.0" y="392.7" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.2</text>
+<line x1="112.0" y1="367.0" x2="1108.0" y2="367.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="102.0" y="371.0" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.25</text>
+<line x1="112.0" y1="345.3" x2="1108.0" y2="345.3" stroke="#d9d2bf" stroke-width="1" />
+<text x="102.0" y="349.3" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.3</text>
+<line x1="112.0" y1="323.6" x2="1108.0" y2="323.6" stroke="#d9d2bf" stroke-width="1" />
+<text x="102.0" y="327.6" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.35</text>
+<line x1="148.9" y1="340.0" x2="148.9" y2="406.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="148.9" y="424.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">10/5</text>
+<line x1="280.6" y1="340.0" x2="280.6" y2="406.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="280.6" y="424.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">25/10</text>
+<line x1="412.4" y1="340.0" x2="412.4" y2="406.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="412.4" y="424.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">50/25</text>
+<line x1="544.1" y1="340.0" x2="544.1" y2="406.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="544.1" y="424.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">75/50</text>
+<line x1="675.9" y1="340.0" x2="675.9" y2="406.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="675.9" y="424.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">100/75</text>
+<line x1="807.6" y1="340.0" x2="807.6" y2="406.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="807.6" y="424.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">125/100</text>
+<line x1="939.4" y1="340.0" x2="939.4" y2="406.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="939.4" y="424.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">200/125</text>
+<line x1="1071.1" y1="340.0" x2="1071.1" y2="406.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="1071.1" y="424.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">350/200</text>
+<path d="M 148.89 390.88 L 280.63 401.45 L 412.38 379.09 L 544.13 395.70 L 675.87 382.06 L 807.62 397.93 L 939.37 386.92 L 1071.11 392.28" fill="none" stroke="#355070" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="148.9" cy="390.9" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="280.6" cy="401.4" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="412.4" cy="379.1" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="544.1" cy="395.7" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="675.9" cy="382.1" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="807.6" cy="397.9" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="939.4" cy="386.9" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="1071.1" cy="392.3" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
+<path d="M 148.89 383.46 L 280.63 389.22 L 412.38 361.36 L 544.13 356.97 L 675.87 344.55 L 807.62 370.40 L 939.37 350.84 L 1071.11 346.91" fill="none" stroke="#c1121f" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="148.9" cy="383.5" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="280.6" cy="389.2" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="412.4" cy="361.4" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="544.1" cy="357.0" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="675.9" cy="344.6" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="807.6" cy="370.4" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="939.4" cy="350.8" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="1071.1" cy="346.9" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
+<line x1="928.0" y1="352.0" x2="952.0" y2="352.0" stroke="#355070" stroke-width="4" stroke-linecap="round" />
+<text x="962.0" y="356.0" fill="#1f1d1a" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">Validation</text>
+<line x1="928.0" y1="374.0" x2="952.0" y2="374.0" stroke="#c1121f" stroke-width="4" stroke-linecap="round" />
+<text x="962.0" y="378.0" fill="#1f1d1a" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">Test</text>
+<text x="610.0" y="444.0" text-anchor="middle" fill="#1f1d1a" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">Layer 1 / Layer 2 Neurons</text>
+<rect x="42.0" y="472.0" width="1096.0" height="180.0" rx="18" fill="#fffdf7" stroke="#e6dec9" />
+<text x="66.0" y="506.0" fill="#1f1d1a" font-size="22" font-weight="700" font-family="Georgia, serif">R^2</text>
+<line x1="112.0" y1="622.6" x2="1108.0" y2="622.6" stroke="#d9d2bf" stroke-width="1" />
+<text x="102.0" y="626.6" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.6</text>
+<line x1="112.0" y1="603.1" x2="1108.0" y2="603.1" stroke="#d9d2bf" stroke-width="1" />
+<text x="102.0" y="607.1" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.65</text>
+<line x1="112.0" y1="583.7" x2="1108.0" y2="583.7" stroke="#d9d2bf" stroke-width="1" />
+<text x="102.0" y="587.7" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.7</text>
+<line x1="112.0" y1="564.2" x2="1108.0" y2="564.2" stroke="#d9d2bf" stroke-width="1" />
+<text x="102.0" y="568.2" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.75</text>
+<line x1="112.0" y1="544.7" x2="1108.0" y2="544.7" stroke="#d9d2bf" stroke-width="1" />
+<text x="102.0" y="548.7" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.8</text>
+<line x1="112.0" y1="525.3" x2="1108.0" y2="525.3" stroke="#d9d2bf" stroke-width="1" />
+<text x="102.0" y="529.3" text-anchor="end" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">0.85</text>
+<line x1="148.9" y1="538.0" x2="148.9" y2="604.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="148.9" y="622.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">10/5</text>
+<line x1="280.6" y1="538.0" x2="280.6" y2="604.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="280.6" y="622.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">25/10</text>
+<line x1="412.4" y1="538.0" x2="412.4" y2="604.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="412.4" y="622.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">50/25</text>
+<line x1="544.1" y1="538.0" x2="544.1" y2="604.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="544.1" y="622.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">75/50</text>
+<line x1="675.9" y1="538.0" x2="675.9" y2="604.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="675.9" y="622.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">100/75</text>
+<line x1="807.6" y1="538.0" x2="807.6" y2="604.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="807.6" y="622.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">125/100</text>
+<line x1="939.4" y1="538.0" x2="939.4" y2="604.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="939.4" y="622.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">200/125</text>
+<line x1="1071.1" y1="538.0" x2="1071.1" y2="604.0" stroke="#d9d2bf" stroke-width="1" />
+<text x="1071.1" y="622.0" text-anchor="middle" fill="#6f6659" font-size="11" font-family="Trebuchet MS, Arial, sans-serif">350/200</text>
+<path d="M 148.89 562.95 L 280.63 545.10 L 412.38 544.79 L 544.13 544.74 L 675.87 542.55 L 807.62 542.78 L 939.37 548.06 L 1071.11 543.73" fill="none" stroke="#355070" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="148.9" cy="562.9" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="280.6" cy="545.1" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="412.4" cy="544.8" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="544.1" cy="544.7" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="675.9" cy="542.6" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="807.6" cy="542.8" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="939.4" cy="548.1" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="1071.1" cy="543.7" r="4.5" fill="#355070" stroke="#fffdf7" stroke-width="1.3" />
+<path d="M 148.89 599.45 L 280.63 586.24 L 412.38 589.77 L 544.13 593.97 L 675.87 590.73 L 807.62 588.32 L 939.37 593.94 L 1071.11 594.41" fill="none" stroke="#c1121f" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="148.9" cy="599.4" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="280.6" cy="586.2" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="412.4" cy="589.8" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="544.1" cy="594.0" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="675.9" cy="590.7" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="807.6" cy="588.3" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="939.4" cy="593.9" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
+<circle cx="1071.1" cy="594.4" r="4.5" fill="#c1121f" stroke="#fffdf7" stroke-width="1.3" />
+<line x1="928.0" y1="550.0" x2="952.0" y2="550.0" stroke="#355070" stroke-width="4" stroke-linecap="round" />
+<text x="962.0" y="554.0" fill="#1f1d1a" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">Validation</text>
+<line x1="928.0" y1="572.0" x2="952.0" y2="572.0" stroke="#c1121f" stroke-width="4" stroke-linecap="round" />
+<text x="962.0" y="576.0" fill="#1f1d1a" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">Test</text>
+<text x="610.0" y="642.0" text-anchor="middle" fill="#1f1d1a" font-size="12" font-family="Trebuchet MS, Arial, sans-serif">Layer 1 / Layer 2 Neurons</text>
 </svg>

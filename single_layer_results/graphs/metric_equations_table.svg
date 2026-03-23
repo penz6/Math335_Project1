@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="330" viewBox="0 0 1180 330" role="img" aria-label="RMSE, R squared, and R equations">
+<rect width="1180" height="330" fill="#f7f4ea" />
+<rect x="28" y="24" width="1124" height="282" rx="16" fill="#fffdf7" stroke="#d9d2bf" stroke-width="1.6" />
+<rect x="28" y="24" width="170" height="94" fill="none" stroke="#d9d2bf" stroke-width="1.2" />
+<rect x="198" y="24" width="954" height="94" fill="none" stroke="#d9d2bf" stroke-width="1.2" />
+<text x="113.0" y="80.0" text-anchor="middle" fill="#355070" font-size="28" font-weight="700" font-family="Cambria Math, STIX Two Math, Times New Roman, serif">RMSE</text>
+<text x="220.0" y="80.0" text-anchor="start" fill="#1f1d1a" font-size="26" font-weight="400" font-family="Cambria Math, STIX Two Math, Times New Roman, serif">RMSE =</text>
+<text x="344.0" y="86.0" text-anchor="start" fill="#1f1d1a" font-size="54" font-weight="400" font-family="Cambria Math, STIX Two Math, Times New Roman, serif">√</text>
+<line x1="378.0" y1="50.0" x2="658.0" y2="50.0" stroke="#1f1d1a" stroke-width="1.8" />
+<text x="518.0" y="64.0" text-anchor="middle" fill="#1f1d1a" font-size="24" font-weight="400" font-family="Cambria Math, STIX Two Math, Times New Roman, serif">Σ (yᵢ − ŷᵢ)²</text>
+<line x1="402.0" y1="76.0" x2="634.0" y2="76.0" stroke="#1f1d1a" stroke-width="1.8" />
+<text x="518.0" y="102.0" text-anchor="middle" fill="#1f1d1a" font-size="24" font-weight="400" font-family="Cambria Math, STIX Two Math, Times New Roman, serif">n</text>
+<rect x="28" y="118" width="170" height="94" fill="none" stroke="#d9d2bf" stroke-width="1.2" />
+<rect x="198" y="118" width="954" height="94" fill="none" stroke="#d9d2bf" stroke-width="1.2" />
+<text x="113.0" y="174.0" text-anchor="middle" fill="#2a9d8f" font-size="28" font-weight="700" font-family="Cambria Math, STIX Two Math, Times New Roman, serif">R²</text>
+<text x="220.0" y="174.0" text-anchor="start" fill="#1f1d1a" font-size="26" font-weight="400" font-family="Cambria Math, STIX Two Math, Times New Roman, serif">R² = 1 −</text>
+<text x="517.0" y="158.0" text-anchor="middle" fill="#1f1d1a" font-size="24" font-weight="400" font-family="Cambria Math, STIX Two Math, Times New Roman, serif">Σ (yᵢ − ŷᵢ)²</text>
+<line x1="352.0" y1="170.0" x2="682.0" y2="170.0" stroke="#1f1d1a" stroke-width="1.8" />
+<text x="517.0" y="196.0" text-anchor="middle" fill="#1f1d1a" font-size="24" font-weight="400" font-family="Cambria Math, STIX Two Math, Times New Roman, serif">Σ (yᵢ − ȳ)²</text>
+<rect x="28" y="212" width="170" height="94" fill="none" stroke="#d9d2bf" stroke-width="1.2" />
+<rect x="198" y="212" width="954" height="94" fill="none" stroke="#d9d2bf" stroke-width="1.2" />
+<text x="113.0" y="268.0" text-anchor="middle" fill="#c1121f" font-size="28" font-weight="700" font-family="Cambria Math, STIX Two Math, Times New Roman, serif">R</text>
+<text x="220.0" y="268.0" text-anchor="start" fill="#1f1d1a" font-size="26" font-weight="400" font-family="Cambria Math, STIX Two Math, Times New Roman, serif">R =</text>
+<text x="684.0" y="252.0" text-anchor="middle" fill="#1f1d1a" font-size="23" font-weight="400" font-family="Cambria Math, STIX Two Math, Times New Roman, serif">Σ ((yᵢ − ȳ)(ŷᵢ − ŷ̄))</text>
+<line x1="304.0" y1="264.0" x2="1064.0" y2="264.0" stroke="#1f1d1a" stroke-width="1.8" />
+<text x="684.0" y="290.0" text-anchor="middle" fill="#1f1d1a" font-size="23" font-weight="400" font-family="Cambria Math, STIX Two Math, Times New Roman, serif">√[Σ (yᵢ − ȳ)² Σ (ŷᵢ − ŷ̄)²]</text>
+</svg>

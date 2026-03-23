@@ -441,6 +441,137 @@ def draw_line_chart(
     save_svg(path, lines)
 
 
+def draw_combined_train_loss_chart(path: Path, histories: dict[int, dict[str, list[float]]]) -> None:
+    series = []
+    for neurons in sorted(histories):
+        loss_values = histories[neurons]["loss"]
+        epochs = list(range(1, len(loss_values) + 1))
+        log_losses = [math.log10(max(value, 1e-12)) for value in loss_values]
+        series.append(
+            {
+                "label": f"{neurons} neurons",
+                "x": epochs,
+                "y": log_losses,
+                "color": COLORS[neurons],
+            }
+        )
+    draw_line_chart(
+        path=path,
+        title="Training Loss by Neuron Count",
+        subtitle="Lower is better. Log-scaled loss values to make late-epoch changes readable.",
+        x_label="Epoch",
+        y_label="Training Loss",
+        series=series,
+        y_tick_formatter=lambda tick: fmt_metric(10 ** tick, 5),
+    )
+
+
+def draw_easy_to_read_train_loss_chart(path: Path, histories: dict[int, dict[str, list[float]]]) -> None:
+    width, height = 1180, 720
+    title = "Easy To Read: Training Loss by Neuron Count"
+    subtitle = "Lower is better. End labels replace the legend for poster readability."
+    lines = svg_header(width, height, title)
+    plot_left, plot_top, plot_width, plot_height = draw_chart_frame(
+        lines, 28, 24, width - 56, height - 48, title, subtitle
+    )
+    plot_right = plot_left + plot_width
+    plot_bottom = plot_top + plot_height
+
+    series = []
+    all_x = []
+    all_y = []
+    for neurons in sorted(histories):
+        loss_values = histories[neurons]["loss"]
+        epochs = list(range(1, len(loss_values) + 1))
+        log_losses = [math.log10(max(value, 1e-12)) for value in loss_values]
+        series.append((neurons, epochs, log_losses, COLORS[neurons]))
+        all_x.extend(epochs)
+        all_y.extend(log_losses)
+
+    x_domain = padded_domain(all_x, 0.02)
+    y_domain = padded_domain(all_y, 0.08)
+    x_ticks = reduce_ticks([int(x) for x in all_x], 8)
+    y_ticks = nice_ticks(y_domain[0], y_domain[1], 6)
+
+    for tick in y_ticks:
+        y = scale_linear(tick, y_domain, (plot_bottom, plot_top))
+        lines.append(
+            f'<line x1="{plot_left:.1f}" y1="{y:.1f}" x2="{plot_right:.1f}" y2="{y:.1f}" '
+            f'stroke="{GRID}" stroke-width="1" />'
+        )
+        lines.append(
+            f'<text x="{plot_left - 12:.1f}" y="{y + 5:.1f}" text-anchor="end" fill="{SUBTLE}" '
+            'font-size="15" font-family="Trebuchet MS, Arial, sans-serif">'
+            f"{fmt_metric(10 ** tick, 5)}</text>"
+        )
+
+    for tick in x_ticks:
+        x = scale_linear(tick, x_domain, (plot_left, plot_right))
+        lines.append(
+            f'<line x1="{x:.1f}" y1="{plot_top:.1f}" x2="{x:.1f}" y2="{plot_bottom:.1f}" '
+            f'stroke="{GRID}" stroke-width="1" />'
+        )
+        lines.append(
+            f'<text x="{x:.1f}" y="{plot_bottom + 24:.1f}" text-anchor="middle" fill="{SUBTLE}" '
+            'font-size="15" font-family="Trebuchet MS, Arial, sans-serif">'
+            f"{tick}</text>"
+        )
+
+    lines.append(
+        f'<line x1="{plot_left:.1f}" y1="{plot_bottom:.1f}" x2="{plot_right:.1f}" y2="{plot_bottom:.1f}" '
+        f'stroke="{AXIS}" stroke-width="1.8" />'
+    )
+    lines.append(
+        f'<line x1="{plot_left:.1f}" y1="{plot_top:.1f}" x2="{plot_left:.1f}" y2="{plot_bottom:.1f}" '
+        f'stroke="{AXIS}" stroke-width="1.8" />'
+    )
+
+    for neurons, epochs, log_losses, color in series:
+        points = [
+            (
+                scale_linear(float(x), x_domain, (plot_left, plot_right)),
+                scale_linear(float(y), y_domain, (plot_bottom, plot_top)),
+            )
+            for x, y in zip(epochs, log_losses)
+        ]
+        lines.append(
+            f'<path d="{build_path(points)}" fill="none" stroke="{color}" '
+            'stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round" />'
+        )
+        for x, y in points:
+            lines.append(
+                f'<circle cx="{x:.1f}" cy="{y:.1f}" r="4.8" fill="{color}" stroke="{PANEL}" stroke-width="1.4" />'
+            )
+
+    legend_x = plot_right - 190
+    legend_y = plot_top + 12
+    for idx, (neurons, _, _, color) in enumerate(series):
+        y = legend_y + idx * 24
+        lines.append(
+            f'<line x1="{legend_x:.1f}" y1="{y:.1f}" x2="{legend_x + 24:.1f}" y2="{y:.1f}" '
+            f'stroke="{color}" stroke-width="4.2" stroke-linecap="round" />'
+        )
+        lines.append(
+            f'<circle cx="{legend_x + 12:.1f}" cy="{y:.1f}" r="4.6" fill="{color}" stroke="{PANEL}" stroke-width="1.2" />'
+        )
+        lines.append(
+            f'<text x="{legend_x + 34:.1f}" y="{y + 5:.1f}" fill="{TEXT}" '
+            'font-size="15" font-family="Trebuchet MS, Arial, sans-serif">'
+            f"{neurons} neurons</text>"
+        )
+
+    lines.append(
+        f'<text x="{(plot_left + plot_right)/2:.1f}" y="{height - 26:.1f}" text-anchor="middle" fill="{TEXT}" '
+        'font-size="17" font-family="Trebuchet MS, Arial, sans-serif">Epoch</text>'
+    )
+    lines.append(
+        f'<text x="24" y="{(plot_top + plot_bottom)/2:.1f}" transform="rotate(-90 24 {(plot_top + plot_bottom)/2:.1f})" '
+        f'text-anchor="middle" fill="{TEXT}" font-size="17" '
+        'font-family="Trebuchet MS, Arial, sans-serif">Training Loss</text>'
+    )
+    save_svg(path, lines)
+
+
 def draw_loss_grid(path: Path, best_rows: list[dict[str, float]], histories: dict[int, dict[str, list[float]]]) -> None:
     width, height = 1400, 980
     lines = svg_header(width, height, "Complete Single-Layer Loss Curves")
@@ -563,7 +694,7 @@ def draw_loss_grid(path: Path, best_rows: list[dict[str, float]], histories: dic
 
 
 def draw_best_metrics_panels(path: Path, best_rows: list[dict[str, float]]) -> None:
-    width, height = 1180, 980
+    width, height = 1180, 720
     lines = svg_header(width, height, "Best Model Metrics by Neuron Count")
     lines.append(
         f'<text x="42" y="46" fill="{TEXT}" font-size="28" font-weight="700" '
@@ -583,9 +714,9 @@ def draw_best_metrics_panels(path: Path, best_rows: list[dict[str, float]]) -> N
 
     panel_left = 42
     panel_w = width - 84
-    panel_h = 255
+    panel_h = 180
     top_start = 76
-    gap = 26
+    gap = 18
 
     for idx, (title, values, color, subtitle) in enumerate(specs):
         top = top_start + idx * (panel_h + gap)
@@ -651,7 +782,7 @@ def draw_best_metrics_panels(path: Path, best_rows: list[dict[str, float]]) -> N
 
 
 def draw_validation_vs_test_panels(path: Path, best_rows: list[dict[str, float]]) -> None:
-    width, height = 1180, 980
+    width, height = 1180, 720
     lines = svg_header(width, height, "Validation vs Test Metrics")
     lines.append(
         f'<text x="42" y="46" fill="{TEXT}" font-size="28" font-weight="700" '
@@ -670,9 +801,9 @@ def draw_validation_vs_test_panels(path: Path, best_rows: list[dict[str, float]]
     ]
     panel_left = 42
     panel_w = width - 84
-    panel_h = 255
+    panel_h = 180
     top_start = 76
-    gap = 26
+    gap = 18
 
     for idx, (metric_name, val_values, test_values) in enumerate(specs):
         top = top_start + idx * (panel_h + gap)
@@ -805,7 +936,7 @@ def draw_true_vs_prediction_scatter(
     domain = padded_domain([lo, hi], 0.06)
     slope, intercept = linear_fit(sample_actual, sample_pred)
 
-    width, height = 1180, 820
+    width, height = 1180, 720
     title = "Overall Best Model: True vs Predicted Test Prices"
     subtitle = f"Best model: {neurons} neurons, {epochs} epochs. Lower spread around the diagonal is better."
     lines = svg_header(width, height, title)
@@ -978,6 +1109,8 @@ def main() -> None:
         )
 
     draw_loss_grid(OUT_DIR / "best_loss_curves_grid.svg", full_run_rows, full_run_histories)
+    draw_combined_train_loss_chart(OUT_DIR / "train_loss_by_neuron_count.svg", full_run_histories)
+    draw_easy_to_read_train_loss_chart(OUT_DIR / "easy_to_read_train_loss_by_neuron_count.svg", full_run_histories)
 
     draw_line_chart(
         path=OUT_DIR / "test_rmse_vs_epoch_budget.svg",
@@ -1089,6 +1222,8 @@ def main() -> None:
     manifest_lines = [
         "Generated files:",
         "best_loss_curves_grid.svg",
+        "train_loss_by_neuron_count.svg",
+        "easy_to_read_train_loss_by_neuron_count.svg",
         "test_rmse_vs_epoch_budget.svg",
         "test_rmse_vs_epoch_budget_focused.svg",
         "test_rmse_vs_epoch_budget_zoomed.svg",

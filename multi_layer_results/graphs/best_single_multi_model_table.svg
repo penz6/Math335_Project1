@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1380" height="300" viewBox="0 0 1380 300" role="img" aria-label="Best single and multi layer model summary table">
+<rect width="1380" height="300" fill="#f7f4ea" />
+<rect x="28" y="26" width="1324" height="248" rx="14" fill="#fffdf7" stroke="#b8b1a1" stroke-width="1.5" />
+<text x="690.0" y="40" text-anchor="middle" fill="#1f1d1a" font-size="28" font-weight="700" font-family="Georgia, serif">Best Single and Multi Layer Models</text>
+<text x="690.0" y="64" text-anchor="middle" fill="#6f6659" font-size="14" font-family="Trebuchet MS, Arial, sans-serif">Average of validation and test metrics for each overall best model</text>
+<rect x="28" y="86" width="1324" height="42" fill="#ede6d2" stroke="#b8b1a1" stroke-width="1.2" />
+<rect x="28.0" y="86" width="397.2" height="42" fill="none" stroke="#b8b1a1" stroke-width="1.2" />
+<text x="226.6" y="113.0" text-anchor="middle" fill="#1f1d1a" font-size="18" font-weight="700" font-family="Trebuchet MS, Arial, sans-serif">Model</text>
+<rect x="425.2" y="86" width="238.3" height="42" fill="none" stroke="#b8b1a1" stroke-width="1.2" />
+<text x="544.4" y="113.0" text-anchor="middle" fill="#1f1d1a" font-size="18" font-weight="700" font-family="Trebuchet MS, Arial, sans-serif">R^2</text>
+<rect x="663.5" y="86" width="238.3" height="42" fill="none" stroke="#b8b1a1" stroke-width="1.2" />
+<text x="782.7" y="113.0" text-anchor="middle" fill="#1f1d1a" font-size="18" font-weight="700" font-family="Trebuchet MS, Arial, sans-serif">R</text>
+<rect x="901.8" y="86" width="450.2" height="42" fill="none" stroke="#b8b1a1" stroke-width="1.2" />
+<text x="1126.9" y="113.0" text-anchor="middle" fill="#1f1d1a" font-size="18" font-weight="700" font-family="Trebuchet MS, Arial, sans-serif">RMSE</text>
+<rect x="28.0" y="128.0" width="397.2" height="64.0" fill="none" stroke="#b8b1a1" stroke-width="1.2" />
+<text x="44.0" y="166.0" text-anchor="start" fill="#1f1d1a" font-size="17" font-family="Trebuchet MS, Arial, sans-serif">Single Layer (125 neurons, 500 epochs)</text>
+<rect x="425.2" y="128.0" width="238.3" height="64.0" fill="none" stroke="#b8b1a1" stroke-width="1.2" />
+<text x="544.4" y="166.0" text-anchor="middle" fill="#1f1d1a" font-size="17" font-family="Trebuchet MS, Arial, sans-serif">0.753 (variance explained)</text>
+<rect x="663.5" y="128.0" width="238.3" height="64.0" fill="none" stroke="#b8b1a1" stroke-width="1.2" />
+<text x="782.7" y="166.0" text-anchor="middle" fill="#1f1d1a" font-size="17" font-family="Trebuchet MS, Arial, sans-serif">0.867 (correlation strength)</text>
+<rect x="901.8" y="128.0" width="450.2" height="64.0" fill="none" stroke="#b8b1a1" stroke-width="1.2" />
+<text x="1126.9" y="166.0" text-anchor="middle" fill="#1f1d1a" font-size="17" font-family="Trebuchet MS, Arial, sans-serif">$235,465 (average error in dollars)</text>
+<rect x="28.0" y="192.0" width="397.2" height="64.0" fill="none" stroke="#b8b1a1" stroke-width="1.2" />
+<text x="44.0" y="230.0" text-anchor="start" fill="#1f1d1a" font-size="17" font-family="Trebuchet MS, Arial, sans-serif">Multi Layer (100/75 neurons, 500 epochs)</text>
+<rect x="425.2" y="192.0" width="238.3" height="64.0" fill="none" stroke="#b8b1a1" stroke-width="1.2" />
+<text x="544.4" y="230.0" text-anchor="middle" fill="#1f1d1a" font-size="17" font-family="Trebuchet MS, Arial, sans-serif">0.744 (variance explained)</text>
+<rect x="663.5" y="192.0" width="238.3" height="64.0" fill="none" stroke="#b8b1a1" stroke-width="1.2" />
+<text x="782.7" y="230.0" text-anchor="middle" fill="#1f1d1a" font-size="17" font-family="Trebuchet MS, Arial, sans-serif">0.865 (correlation strength)</text>
+<rect x="901.8" y="192.0" width="450.2" height="64.0" fill="none" stroke="#b8b1a1" stroke-width="1.2" />
+<text x="1126.9" y="230.0" text-anchor="middle" fill="#1f1d1a" font-size="17" font-family="Trebuchet MS, Arial, sans-serif">$239,481 (average error in dollars)</text>
+</svg>
