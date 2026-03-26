@@ -33,12 +33,12 @@ SUBTLE = "#6f6659"
 TRAIN = "#355070"
 VAL = "#c1121f"
 
-
+# read csv rows into memory
 def read_csv_rows(path: Path) -> list[dict[str, str]]:
     with path.open(newline="") as handle:
         return list(csv.DictReader(handle))
 
-
+# read one numeric column
 def read_single_column(path: Path) -> list[float]:
     rows = read_csv_rows(path)
     if not rows:
@@ -46,11 +46,11 @@ def read_single_column(path: Path) -> list[float]:
     column = next(iter(rows[0].keys()))
     return [float(row[column]) for row in rows]
 
-
+# format whole numbers
 def fmt_int(value: float) -> str:
     return f"{int(round(value)):,}"
 
-
+# format short labels
 def fmt_short(value: float) -> str:
     if abs(value) >= 1_000_000:
         return f"{value/1_000_000:.1f}M".rstrip("0").rstrip(".")
@@ -62,11 +62,11 @@ def fmt_short(value: float) -> str:
         return f"{value:.2f}".rstrip("0").rstrip(".")
     return f"{value:.3f}".rstrip("0").rstrip(".")
 
-
+# format metric values
 def fmt_metric(value: float, digits: int = 3) -> str:
     return f"{value:.{digits}f}".rstrip("0").rstrip(".")
 
-
+# format short money labels
 def fmt_currency_short(value: float) -> str:
     if abs(value) >= 1_000_000:
         return f"${value/1_000_000:.1f}M".rstrip("0").rstrip(".")
@@ -74,7 +74,7 @@ def fmt_currency_short(value: float) -> str:
         return f"${value/1_000:.0f}k"
     return f"${int(round(value)):,}"
 
-
+# escape svg text
 def escape(text: str) -> str:
     return (
         text.replace("&", "&amp;")
@@ -83,7 +83,7 @@ def escape(text: str) -> str:
         .replace('"', "&quot;")
     )
 
-
+# scale values to screen space
 def scale_linear(value: float, domain: tuple[float, float], span: tuple[float, float]) -> float:
     lo, hi = domain
     start, end = span
@@ -92,7 +92,7 @@ def scale_linear(value: float, domain: tuple[float, float], span: tuple[float, f
     ratio = (value - lo) / (hi - lo)
     return start + ratio * (end - start)
 
-
+# add padding to a domain
 def padded_domain(values: Iterable[float], pad_fraction: float = 0.06) -> tuple[float, float]:
     values = list(values)
     lo = min(values)
@@ -104,7 +104,7 @@ def padded_domain(values: Iterable[float], pad_fraction: float = 0.06) -> tuple[
     pad = span * pad_fraction
     return lo - pad, hi + pad
 
-
+# build nice axis ticks
 def nice_ticks(lo: float, hi: float, count: int = 5) -> list[float]:
     if hi <= lo:
         return [lo]
@@ -128,7 +128,7 @@ def nice_ticks(lo: float, hi: float, count: int = 5) -> list[float]:
         value += nice_step
     return ticks
 
-
+# reduce the number of ticks
 def reduce_ticks(values: list[int], max_ticks: int = 8) -> list[int]:
     ordered = sorted(dict.fromkeys(values))
     if len(ordered) <= max_ticks:
@@ -139,14 +139,14 @@ def reduce_ticks(values: list[int], max_ticks: int = 8) -> list[int]:
         positions.append(ordered[pos])
     return sorted(dict.fromkeys(positions))
 
-
+# build an svg path string
 def build_path(points: list[tuple[float, float]]) -> str:
     return " ".join(
         [f"M {points[0][0]:.2f} {points[0][1]:.2f}"]
         + [f"L {x:.2f} {y:.2f}" for x, y in points[1:]]
     )
 
-
+# compute the correlation value
 def pearson_correlation(xs: list[float], ys: list[float]) -> float:
     if len(xs) != len(ys) or not xs:
         return 0.0
@@ -159,7 +159,7 @@ def pearson_correlation(xs: list[float], ys: list[float]) -> float:
         return 0.0
     return num / (den_x * den_y)
 
-
+# compute the line of best fit
 def linear_fit(xs: list[float], ys: list[float]) -> tuple[float, float]:
     if len(xs) != len(ys) or not xs:
         return 1.0, 0.0
@@ -172,7 +172,7 @@ def linear_fit(xs: list[float], ys: list[float]) -> tuple[float, float]:
     intercept = mean_y - slope * mean_x
     return slope, intercept
 
-
+# build the feature correlation data
 def compute_feature_correlation_matrix(include_categorical: bool = False) -> tuple[list[str], list[list[float]]]:
     source = Path("/home/penn/Downloads/city_market_tracker.tsv000")
     sample_every = 25
@@ -274,7 +274,7 @@ def compute_feature_correlation_matrix(include_categorical: bool = False) -> tup
         matrix.append([pearson_correlation(xs, ys) for ys in columns])
     return labels, matrix
 
-
+# build the svg header
 def svg_header(width: int, height: int, title: str) -> list[str]:
     return [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
@@ -282,11 +282,11 @@ def svg_header(width: int, height: int, title: str) -> list[str]:
         f'<rect width="{width}" height="{height}" fill="{BG}" />',
     ]
 
-
+# save the svg file
 def save_svg(path: Path, lines: list[str]) -> None:
     path.write_text("\n".join(lines + ["</svg>"]), encoding="utf-8")
 
-
+# draw the chart frame
 def draw_chart_frame(
     lines: list[str],
     left: float,
@@ -317,7 +317,7 @@ def draw_chart_frame(
     plot_height = height - (130 if subtitle else 114)
     return plot_left, plot_top, plot_width, plot_height
 
-
+# draw a line chart
 def draw_line_chart(
     path: Path,
     title: str,
@@ -435,7 +435,7 @@ def draw_line_chart(
     )
     save_svg(path, lines)
 
-
+# draw the combined train loss chart
 def draw_combined_train_loss_chart(path: Path, histories: dict[tuple[int, int], dict[str, list[float]]]) -> None:
     series = []
     for config in sorted(histories):
@@ -460,7 +460,7 @@ def draw_combined_train_loss_chart(path: Path, histories: dict[tuple[int, int], 
         y_tick_formatter=lambda tick: fmt_metric(10 ** tick, 5),
     )
 
-
+# draw the simple train loss chart
 def draw_easy_to_read_train_loss_chart(path: Path, histories: dict[tuple[int, int], dict[str, list[float]]]) -> None:
     width, height = 1180, 720
     title = "Easy To Read: Training Loss by Configuration"
@@ -566,7 +566,7 @@ def draw_easy_to_read_train_loss_chart(path: Path, histories: dict[tuple[int, in
     )
     save_svg(path, lines)
 
-
+# draw the loss grid
 def draw_loss_grid(path: Path, best_rows: list[dict[str, float]], histories: dict[tuple[int, int], dict[str, list[float]]]) -> None:
     width, height = 1400, 1250
     lines = svg_header(width, height, "Complete Multi-Layer Loss Curves")
@@ -687,7 +687,7 @@ def draw_loss_grid(path: Path, best_rows: list[dict[str, float]], histories: dic
 
     save_svg(path, lines)
 
-
+# draw the best metrics panels
 def draw_best_metrics_panels(path: Path, best_rows: list[dict[str, float]]) -> None:
     width, height = 1180, 720
     lines = svg_header(width, height, "Best Model Metrics by Configuration")
@@ -776,7 +776,7 @@ def draw_best_metrics_panels(path: Path, best_rows: list[dict[str, float]]) -> N
 
     save_svg(path, lines)
 
-
+# draw the validation and test panels
 def draw_validation_vs_test_panels(path: Path, best_rows: list[dict[str, float]]) -> None:
     width, height = 1180, 720
     lines = svg_header(width, height, "Validation vs Test Metrics")
@@ -834,7 +834,7 @@ def draw_validation_vs_test_panels(path: Path, best_rows: list[dict[str, float]]
 
     save_svg(path, lines)
 
-
+# draw the feature correlation heatmap
 def draw_correlation_heatmap(path: Path, include_categorical: bool = False) -> None:
     labels, corr = compute_feature_correlation_matrix(include_categorical=include_categorical)
     width, height = 980, 940
@@ -866,7 +866,7 @@ def draw_correlation_heatmap(path: Path, include_categorical: bool = False) -> N
 
     save_svg(path, lines)
 
-
+# draw the sorted prediction lines
 def draw_sorted_predictions(path: Path, actual: list[float], predicted: list[float], layer_1: int, layer_2: int, epochs: int) -> None:
     paired = sorted(zip(actual, predicted), key=lambda item: item[0])
     if len(paired) > 1:
@@ -899,7 +899,7 @@ def draw_sorted_predictions(path: Path, actual: list[float], predicted: list[flo
         footer_text="Test data shown: 2022-02-01 to 2026-01-01",
     )
 
-
+# draw the true vs prediction scatter plot
 def draw_true_vs_prediction_scatter(
     path: Path,
     actual: list[float],
@@ -1035,7 +1035,7 @@ def draw_true_vs_prediction_scatter(
     )
     save_svg(path, lines)
 
-
+# draw the test vs validation chart
 def draw_test_vs_validation_by_epoch(path: Path, rows_for_config: list[dict[str, float]], label: str) -> None:
     items = sorted(rows_for_config, key=lambda item: item["epochs"])
     epochs = [int(item["epochs"]) for item in items]
@@ -1051,7 +1051,7 @@ def draw_test_vs_validation_by_epoch(path: Path, rows_for_config: list[dict[str,
         ],
     )
 
-
+# run all the graph builders
 def main() -> None:
     rows = []
     for raw in read_csv_rows(ROOT / "all_model_results.csv"):

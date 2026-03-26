@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-"""Generate an SVG table with visually formatted RMSE, R^2, and R equations."""
 
 from __future__ import annotations
 
@@ -20,7 +18,7 @@ TRAIN = "#355070"
 VAL = "#c1121f"
 ACCENT = "#2a9d8f"
 
-
+# build text elements
 def text(x: float, y: float, content: str, *, size: int = 24, fill: str = TEXT, weight: str = "400", anchor: str = "start") -> str:
     return (
         f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{anchor}" fill="{fill}" '
@@ -29,11 +27,11 @@ def text(x: float, y: float, content: str, *, size: int = 24, fill: str = TEXT, 
         f"{content}</text>"
     )
 
-
+# build the metric label
 def metric_label(x: float, y: float, label: str, color: str) -> list[str]:
     return [text(x, y, label, size=28, fill=color, weight="700", anchor="middle")]
 
-
+# build a fraction layout
 def fraction(x: float, y: float, width: float, numerator: str, denominator: str, *, size: int = 24) -> list[str]:
     mid = x + width / 2
     return [
@@ -42,7 +40,7 @@ def fraction(x: float, y: float, width: float, numerator: str, denominator: str,
         text(mid, y + 26, denominator, size=size, anchor="middle"),
     ]
 
-
+# build the rmse formula
 def rmse_formula(x: float, y: float) -> list[str]:
     lines = [
         text(x, y, "RMSE =", size=26),
@@ -61,7 +59,7 @@ def rmse_formula(x: float, y: float) -> list[str]:
     )
     return lines
 
-
+# build the r squared formula
 def r2_formula(x: float, y: float) -> list[str]:
     lines = [text(x, y, "R² = 1 −", size=26)]
     lines.extend(
@@ -76,7 +74,7 @@ def r2_formula(x: float, y: float) -> list[str]:
     )
     return lines
 
-
+# build the correlation formula
 def r_formula(x: float, y: float) -> list[str]:
     lines = [text(x, y, "R =", size=26)]
     lines.extend(
@@ -91,7 +89,7 @@ def r_formula(x: float, y: float) -> list[str]:
     )
     return lines
 
-
+# build the full svg table
 def build_svg() -> str:
     width, height = 1180, 330
     left = 28
@@ -122,12 +120,12 @@ def build_svg() -> str:
     lines.append("</svg>")
     return "\n".join(lines)
 
-
+# write the final svg files
 def main() -> None:
     svg = build_svg()
     for path in OUT_PATHS:
         path.write_text(svg, encoding="utf-8")
 
-
+# run the script
 if __name__ == "__main__":
     main()

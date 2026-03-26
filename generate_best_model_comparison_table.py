@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-"""Generate a comparison table for the best single- and multi-layer models."""
-
 from __future__ import annotations
 
 import csv
@@ -20,24 +17,24 @@ TEXT = "#1f1d1a"
 SUBTLE = "#6f6659"
 HEADER = "#ede6d2"
 
-
+# read one summary row
 def read_summary(path: Path) -> dict[str, str]:
     with path.open(newline="") as handle:
         return next(csv.DictReader(handle))
 
-
+# get the average of two values
 def avg(a: float, b: float) -> float:
     return (a + b) / 2.0
 
-
+# format decimal values
 def fmt_decimal(value: float) -> str:
     return f"{value:.3f}"
 
-
+# format money values
 def fmt_money(value: float) -> str:
     return f"${value:,.0f}"
 
-
+# build the table rows
 def model_rows() -> list[list[str]]:
     single = read_summary(ROOT / "single_layer_results/overall_best_model_summary.csv")
     multi = read_summary(ROOT / "multi_layer_results/overall_best_model_summary.csv")
@@ -65,7 +62,7 @@ def model_rows() -> list[list[str]]:
         ],
     ]
 
-
+# build the svg table
 def build_svg(rows: list[list[str]]) -> str:
     width, height = 1380, 300
     left = 28
@@ -129,12 +126,12 @@ def build_svg(rows: list[list[str]]) -> str:
     lines.append("</svg>")
     return "\n".join(lines)
 
-
+# write the final svg files
 def main() -> None:
     svg = build_svg(model_rows())
     for path in OUT_PATHS:
         path.write_text(svg, encoding="utf-8")
 
-
+# run the script
 if __name__ == "__main__":
     main()
